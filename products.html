@@ -1372,6 +1372,7 @@
         const res = await fetch(API_URL + '?limit=100');
         allProducts = await res.json();
         renderProducts(allProducts);
+        handleUrlParams();
       } catch (err) {
         console.warn('Failed to fetch data, using static fallback.', err);
         renderStaticFallback();
@@ -1660,7 +1661,7 @@
 
 
     // Call after data is loaded in init
-    setTimeout(handleUrlParams, 500); // Small delay to ensure allProducts is populated
+// Small delay to ensure allProducts is populated
   </script>
 
 
