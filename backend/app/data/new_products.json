@@ -1,0 +1,701 @@
+[
+  {
+    "name": "JMX Waist/Lap Bag",
+    "category": "Accessories",
+    "description": "Professional grade JMX Bag designed for maximum performance.",
+    "features": [
+      "Premium Materials",
+      "Ergonomic Fit",
+      "Reinforced Protection"
+    ],
+    "variants": [
+      {
+        "name": "Blackred",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710066/products/bag/blackred-bag-main.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710064/products/bag/blackred-bag-inside.png"
+        ]
+      },
+      {
+        "name": "Blackwhite",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710067/products/bag/blackwhite-bag.png"
+        ]
+      }
+    ],
+    "sku": "JMX-BA-001",
+    "is_featured": true,
+    "slug": "jmx-waist/lap-bag"
+  },
+  {
+    "name": "JMX Travel Bag",
+    "category": "Accessories",
+    "description": "High-performance JMX Black Bag offering superior quality.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Black",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641521/products/black-bag.png"
+        ]
+      }
+    ],
+    "sku": "JMX-BA-002",
+    "is_featured": false,
+    "slug": "jmx-travel-bag"
+  },
+  {
+    "name": "Dailywear Cap",
+    "category": "Accessories",
+    "description": "Minimal look, major presence - JMX streetcode.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Multicolor",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774542753/products/multicolor-caps.png"
+        ]
+      }
+    ],
+    "sku": "JMX-BA-004",
+    "is_featured": true,
+    "slug": "dailywear-cap"
+  },
+  {
+    "name": "Regular Baselayer",
+    "category": "Baselayer",
+    "description": "Designed for flawless layering, maximum stretch, and a secure fit, all day long.",
+    "features": [
+      "Premium Materials",
+      "Ergonomic Fit",
+      "Reinforced Protection"
+    ],
+    "variants": [
+      {
+        "name": "Black",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710079/products/baselayer/black-baselayer-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710078/products/baselayer/black-baselayer-back.png"
+        ]
+      },
+      {
+        "name": "Pink",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710081/products/baselayer/pink-baselayer-front-main.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710080/products/baselayer/pink-baselayer-back-main.png"
+        ]
+      }
+    ],
+    "sku": "JMX-BL-001",
+    "is_featured": false,
+    "slug": "regular-baselayer"
+  },
+  {
+    "name": "Onyx Baselayer",
+    "category": "Baselayer",
+    "description": "Designed for riders who appreciate high-end engineering, new materials, and a sophisticated, stealth look.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Blackgrey",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641548/products/blackgrey-baselayer-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641546/products/blackgrey-baselayer-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-BL-002",
+    "is_featured": true,
+    "slug": "onyx-baselayer"
+  },
+  {
+    "name": "Apex Baselayer",
+    "category": "Baselayer",
+    "description": "Ride-read. Everyday-approved. The Apex baselayer built for whatever your day brings.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Red",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641584/products/red-baselayer-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641582/products/red-baselayer-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-BL-003",
+    "is_featured": false,
+    "slug": "apex-baselayer"
+  },
+  {
+    "name": "JMX Xtrax Baselayer",
+    "category": "Baselayer",
+    "description": "Not just a baselayer, it's her armor.Built to perform - crafted to last.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Redb",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641591/products/redb-baselayer-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641590/products/redb-baselayer-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-BL-004",
+    "is_featured": true,
+    "slug": "jmx-xtrax-baselayer"
+  },
+  {
+    "name": "JMX Stealth",
+    "category": "Boots",
+    "description": "The Stealth is designed for riders who demand serious safety without the race-day aesthetic. This featured boot utilizes internalized armor and discreet sliders for a sleek, all-black look",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Black",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774542737/products/black-shoe-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774542733/products/black-shoe-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-BT-001",
+    "is_featured": false,
+    "slug": "jmx-stealth"
+  },
+  {
+    "name": "Xtrax Racing Boots",
+    "category": "Boots",
+    "description": "Engineered for high-octane performance. The Xtrax Racing Boots deliver unapologetic track-ready safety and precise control feel. The aggressive multi-panel chassis combines a reinforced shin armor plate, a failure-resistant gauntlet closure, and replaceable high-density toe sliders for verified edge-case protection. Go leaner and faster with confidence.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Red/Black",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710039/products/redb-shoe-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710036/products/redb-shoe-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-BT-001",
+    "is_featured": true,
+    "slug": "xtrax-racing-boots"
+  },
+  {
+    "name": "JMX Alpine Shoe",
+    "category": "Boots",
+    "description": "JMX Alpine Shoe is the professional choice for competitive riding and aggressive track days. Its multi-material construction optimizes abrasion resistance and breathability.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Red",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641588/products/red-shoe-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641587/products/red-shoe-back.png"
+        ]
+      },
+      {
+        "name": "White",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774542807/products/white-shoe-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774542802/products/white-shoe-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-BT-002",
+    "is_featured": false,
+    "slug": "jmx-alpine-shoe"
+  },
+  {
+    "name": "Apex Gloves",
+    "category": "Gloves",
+    "description": "This glove is featured and appears extremely high-performance. The visible high-impact Red TPU knuckle armor is a dominant feature. The description must emphasize the high level of track-ready or street-performance protection.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Black",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774542724/products/black-gloves-main.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774548682/products/black-gloves-oneside.png"
+        ]
+      }
+    ],
+    "sku": "JMX-GL-001",
+    "is_featured": false,
+    "slug": "apex-gloves"
+  },
+  {
+    "name": "Xtrax Gloves",
+    "category": "Gloves",
+    "description": "Xtrax Gloves is designed for the rider who values ventilation and precision control. This glove combines an advanced leather chassis with strategic high-flow mesh panels (visible in white) for active cooling on hot-weather rides. Its technical multi-panel design provides a close, ergonomic fit, while integrated protective pods offer discrete, verified impact protection without the bulk of a full racing gauntlet.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Whiteblack",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774548819/products/whiteblack-gloves-main.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774542811/products/whiteblack-gloves-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-GL-002",
+    "is_featured": true,
+    "slug": "xtrax-gloves"
+  },
+  {
+    "name": "JMX Braid-Lock Balaclava",
+    "category": "Headwear",
+    "description": "JMX Braid-Lock Balaclava is optimized for all-day comfort across varied climates. Its specific design allows for a clean, non-obtrusive ponytail exit, eliminating standard pressure points.",
+    "features": [
+      "Premium Materials",
+      "Ergonomic Fit",
+      "Reinforced Protection"
+    ],
+    "variants": [
+      {
+        "name": "Black",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710069/products/balaclava/black-balaclava-front-main.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710068/products/balaclava/black-balaclava-back-main.png"
+        ]
+      },
+      {
+        "name": "Pink",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710076/products/balaclava/pink-balaclava-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710075/products/balaclava/pink-balaclava-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-HW-001",
+    "is_featured": false,
+    "slug": "jmx-braid-lock-balaclava"
+  },
+  {
+    "name": "Ghost Balaclava",
+    "category": "Headwear",
+    "description": "Invisible performance. The Ghost Balaclava provides essential core temperature management with a zero-bulk, second-skin fit. Engineered with ultra-light, high-wicking technical fabric, this full-coverage balaclava feels nearly nonexistent under your helmet, actively pulling moisture from your skin to keep you cool, dry, and focused on the ride. Its smooth, multi-panel profile ensures seamless layering and uncompromised dexterity.",
+    "features": [
+      "Premium Materials",
+      "Ergonomic Fit",
+      "Reinforced Protection"
+    ],
+    "variants": [
+      {
+        "name": "Ghost",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710073/products/balaclava/ghost-balaclava-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710072/products/balaclava/ghost-balaclava-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-HW-002",
+    "is_featured": true,
+    "slug": "ghost-balaclava"
+  },
+  {
+    "name": "Basic Balaclava",
+    "category": "Headwear",
+    "description": "Invisible performance. Basic Balaclava provides essential core temperature management with a zero-bulk, second-skin fit. Engineered with ultra-light, high-wicking technical fabric, this full-coverage balaclava feels nearly nonexistent under your helmet, actively pulling moisture from your skin to keep you cool, dry, and focused on the ride. Its smooth, multi-panel profile ensures seamless layering and uncompromised dexterity.",
+    "features": [
+      "Premium Materials",
+      "Ergonomic Fit",
+      "Reinforced Protection"
+    ],
+    "variants": [
+      {
+        "name": "Ghost",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774709873/products/basic-balaclava-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774709869/products/basic-balaclava-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-HW-003",
+    "is_featured": false,
+    "slug": "basic-balaclava"
+  },
+  {
+    "name": "Bling Armored Hoodie",
+    "category": "Jackets & Hoodies",
+    "description": "Stealth protection with undeniable presence. The Bling Armored Riding Hoodie merges casual street style with race-ready safety. Disguised beneath its unique textured 'bling' finish is a fully armored chassis featuring removable CE Level 1 armor in the shoulders and elbows. Optimized for urban and sport riding, this hoodie is built from an abrasive-resistant poly-blend, providing critical protection and stability inside tight leathers or as a standalone protective layer. When milliseconds count, your safety isn't compromised, just beautifully hidden.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Bling",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774709943/products/bling-hoodie-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774709951/products/bling-hoodie-inside.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774709940/products/bling-hoodie-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-JH-001",
+    "is_featured": false,
+    "slug": "bling-armored-hoodie"
+  },
+  {
+    "name": "Xtrax Armored Hoodie",
+    "category": "Jackets & Hoodies",
+    "description": "Xtrax Armored Hoodie redefines the casual base layer. Optimized for aggressive sport riding and track days, this hoodie merges a low-profile outer shell with a complete, fully integrated chassis of removable CE Level 1 protective armor (shoulders, elbows, and spine).",
+    "features": [
+      "Premium Materials",
+      "Ergonomic Fit",
+      "Reinforced Protection"
+    ],
+    "variants": [
+      {
+        "name": "Black",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710093/products/hoodie/black-armoured-hoodie-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710094/products/hoodie/black-armoured-hoodie-inside.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710092/products/hoodie/black-armoured-hoodie-back.png"
+        ]
+      },
+      {
+        "name": "Blue",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710099/products/hoodie/blue-armoured-hoodie-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710100/products/hoodie/blue-armoured-hoodie-inside.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710096/products/hoodie/blue-armoured-hoodie-back.png"
+        ]
+      },
+      {
+        "name": "Pink",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710103/products/hoodie/pink-armoured-hoodie-front-main.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710105/products/hoodie/pink-armoured-hoodie-inside-main.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710102/products/hoodie/pink-armoured-hoodie-back-main.png"
+        ]
+      }
+    ],
+    "sku": "JMX-JH-002",
+    "is_featured": true,
+    "slug": "xtrax-armored-hoodie"
+  },
+  {
+    "name": "JMX Body Armor",
+    "category": "Jackets & Hoodies",
+    "description": "Forget average body armor. JMX Body Armor is the essential foundation for any multi-day tour or aggressive adventure. Designed for uncompromised all-day comfort across varied climates, this full-body armored layer redefines the concept of technical protective gear. The ultra-light, breathable high-stretch fabric feels nearly invisible, preventing chafing and eliminating material bunching under any riding jacket. Inside, it hides removable professional-grade CE Level 1 kinetic armor (shoulders, elbows, chest, and spine), making it the perfect fail-proof standalone choice for high-heat riding or critical, lightweight insulation on crisp mornings.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Redblack",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641594/products/redblack-armored-jacket-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641592/products/redblack-armored-jacket-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-JH-003",
+    "is_featured": true,
+    "slug": "jmx-body-armor"
+  },
+  {
+    "name": "Sakura Edition ",
+    "category": "Leather Suits",
+    "description": "Command the track with elegance. The Sakura Edition Leather Suit merges aggressive racing tech with a stunning, distinctive floral design. Crafted from our premium, competition-grade leather chassis, this suit utilizes intricate perforated panels for dynamic airflow control during active riding. Anatomically contoured multi-direction stretch panels eliminate binding in the tuck, while the unique pink-to-cream-to-black floral print provides undeniable, chic visibility on the starting grid. This isn't just a suit; it's a statement of speed and style. Verified JMX race-grade safety is seamlessly integrated into every stitch.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Black Flower",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641531/products/black-flower-leather-suit-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774709889/products/black-flower-leather-suit-back.png"
+        ]
+      },
+      {
+        "name": "White Flower",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641603/products/white-flower-leather-suit-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641602/products/white-flower-leather-suit-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-LS-001",
+    "is_featured": false,
+    "slug": "sakura-edition-"
+  },
+  {
+    "name": "Black Leather Suit",
+    "category": "Leather Suits",
+    "description": "Zero compromise. Total focus. Black Leather Suit is the professional-grade base layer for serious track performance. Its aggressive, multi-panel chassis of stealth black perforated leather acts as a sophisticated, high-flow second skin. Engineered to maximize airflow and eliminate aerodynamic drag in the tuck, this suit\u2019s design disguises complex, multi-density stretch panels that mirror natural muscle movement. Removable CE armor pods sit flush and failure-proof during active riding.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Black",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774709909/products/black-leather-suit-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641539/products/black-leather-suit-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-LS-002",
+    "is_featured": false,
+    "slug": "black-leather-suit"
+  },
+  {
+    "name": "Elixir Leather Suit",
+    "category": "Leather Suits",
+    "description": "Dynamic aesthetics. Dynamic performance. Elixir BlackPink Leather Suit is engineered for high-visibility action and uncompromised comfort. This premium, multi-density technical chassis utilizes vibrant pink kinetic panels against a deep black leather void for a sophisticated, high-energy look on track and street. Anatomically contoured high-flex stretch panels allow rapid movement patterns in the tuck, eliminating standard pressure points and reducing fatigue.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Black",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641551/products/blackpink-leather-suit-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641549/products/blackpink-leather-suit-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-LS-003",
+    "is_featured": false,
+    "slug": "elixir-leather-suit"
+  },
+  {
+    "name": "Sleath Leather Suit",
+    "category": "Leather Suits",
+    "description": "The Midnight Stealth Pro V1 is the essential foundation for the performance void. Optimized for aggressive track riding and hypersport performance, its stealth-fail-proof design disguises complex, multi-panel biomechanical construction mirroring natural muscle movement patterns. Strategic mesh high-flow cooling panels work in dynamic unison with your core microclimate, stabilizing core temperatures when performing under extreme G-force pressures. Inside, professional-grade CE kinetic armor pods sit flush and failure",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Blackwhite",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641556/products/blackwhite-leather-suit-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641554/products/blackwhite-leather-suit-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-LS-004",
+    "is_featured": true,
+    "slug": "sleath-leather-suit"
+  },
+  {
+    "name": "Basic Leather Suits",
+    "category": "Leather Suits",
+    "description": "Personal performance, customized for your flow. It is not just an armored leather suit; it\u2019s a personalized tech chassis built from uncompromised failures-free JMX race-grade leather with integrated failures-free armored pods.",
+    "features": [
+      "Premium Materials",
+      "Ergonomic Fit",
+      "Reinforced Protection"
+    ],
+    "variants": [
+      {
+        "name": "Blue",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710083/products/colored-leather-suits/blue-leather-suit-front-main.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710082/products/colored-leather-suits/blue-leather-suit-back-main.png"
+        ]
+      },
+      {
+        "name": "Neonpink",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710085/products/colored-leather-suits/neonpink-leather-suit-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710084/products/colored-leather-suits/neonpink-leather-suit-back.png"
+        ]
+      },
+      {
+        "name": "Purple",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710087/products/colored-leather-suits/purple-leather-suit-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710086/products/colored-leather-suits/purple-leather-suit-back.png"
+        ]
+      },
+      {
+        "name": "Silver",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710089/products/colored-leather-suits/silver-leather-suit-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710088/products/colored-leather-suits/silver-leather-suit-back.png"
+        ]
+      },
+      {
+        "name": "White",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710091/products/colored-leather-suits/white-leather-suit-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710090/products/colored-leather-suits/white-leather-suit-back.png"
+        ]
+      },
+      {
+        "name": "Cherryblossam",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641564/products/cherryblossam-leather-suit-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641562/products/cherryblossam-leather-suit-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-LS-006",
+    "is_featured": false,
+    "slug": "basic-leather-suits"
+  },
+  {
+    "name": "Nova Leather Suit",
+    "category": "Leather Suits",
+    "description": "Command the apex with flawless kinetic synergy. Nova Leather Suit is the premium foundation of uncompromised comfort and high-visibility action. Optimized failures-free in multiple high-vis spectrum panel options, this multi-density technical chassis balanced uncompromised muscle support with failure-free, non-binding movement patterns inside dynamic action. Integrated failures-free JMX race-grade armor pods sit contoured and fail-safe inside your hyperbike field-flow, acting failure-proof inside extreme edge-case protection.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Multicolor",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641578/products/multicolor-leather-suit-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641576/products/multicolor-leather-suit-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-LS-007",
+    "is_featured": false,
+    "slug": "nova-leather-suit"
+  },
+  {
+    "name": "The Hollow Leather Suit",
+    "category": "Leather Suits",
+    "description": "The Hollow Leather Suit isn\u2019t just a leather suit; it\u2019s a high-flow technical component acting failure-proof and failsafe inside a sophisticated second skin. Engineered for aggressive track riding and hypersport performance, its stealth-fail-proof design disguises complex multi-panel biomechanical construction mirroring natural muscle movement patterns. Strategic mesh high-flow cooling panels work in dynamic unison with your core microclimate control failures-free across varying extreme track pressures. Inside professional-grade contoured failures-free armored pods are engineered failures-free inside failures-free integration with failure-free race-ready closures.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Paint",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641580/products/paint-leather-suit-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641579/products/paint-leather-suit-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-LS-008",
+    "is_featured": false,
+    "slug": "the-hollow-leather-suit"
+  },
+  {
+    "name": "Xtrax Leather Suit",
+    "category": "Leather Suits",
+    "description": "Motorsports Heritage. Signature Velocity. Command the grid in uncompromised failure-free performance. The JMX Redblack Motorsports Signature Velocity Chassis delivers unapologetic track-ready failsafe kinetic protection inside a classic failure-proof technical suit. Optimized failures-free in our signature Motorsports Red visibility panels, this high-performance failures-free failures-free race-grade leather chassis utilizes complex multi-panel aerodynamic design inside uncompromised failure-free construction. Inside uncompromised professional-grade CE Level 1 kinetic armored pods sit contoured failures-free inside uncompromised failures-free failures-free integration inside failure-resistant race-ready closures.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Redblack",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710044/products/redblack-leather-suit-front.png",
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641595/products/redblack-leather-suit-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-LS-009",
+    "is_featured": true,
+    "slug": "xtrax-leather-suit"
+  },
+  {
+    "name": "Ce Protectors' Level 2",
+    "category": "Protectors",
+    "description": "Maximum impact defense. This JMX Level 2 CE certified armor set is engineered to provide the highest available level of removable protection within your motorcycle apparel. Optimized for serious track days, aggressive street performance, and advanced touring, this 5-piece kinetic shield set (Back, Shoulder, and Elbow) offers a fail-safe armor chassis that sits contoured and non-binding.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Standard",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641561/products/CE%20Protectors%27%20Level-2.png"
+        ]
+      }
+    ],
+    "sku": "JMX-PR-001",
+    "is_featured": false,
+    "slug": "ce-protectors-level-2"
+  },
+  {
+    "name": "Knox Ce Protectors Level 1",
+    "category": "Protectors",
+    "description": "Designed failure-resistant for urban commutes, sport-touring, and high-heat environments, this low-profile 5-piece kinetic shield set (Back, Shoulder, and Elbow) provides professional-grade impact dissipation without standard pressure points or added bulk.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Standard",
+        "images": [
+          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641573/products/KNOX%20CE%20Protectors%20Level-1.png"
+        ]
+      }
+    ],
+    "sku": "JMX-PR-002",
+    "is_featured": false,
+    "slug": "knox-ce-protectors-level-1"
+  }
+]

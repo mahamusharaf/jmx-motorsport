@@ -1,0 +1,1399 @@
+[
+  {
+    "id": 1,
+    "name": "Adventure Bikers Boots Black",
+    "slug": "adventure-bikers-boots-black",
+    "category": "Motorcycle Boots",
+    "subcategory": "Bikers Adventure Boots",
+    "description": "MARJAN IMPEX motorcycle leather Adventure boots made of leather upper, non slip rubber sole, TPU gear shifter, TPU shin protection, TPU heel Protection, Mesh lining, thermal plastic toe protection, toe safety external slider, elastic stretch panels, YKK zipper closer.",
+    "images": [
+      "/src/assets/images/products/boots-short-black-side.png"
+    ],
+    "features": [
+      "Leather Upper",
+      "TPU Gear Shifter",
+      "TPU Shin Protection",
+      "Mesh Lining",
+      "YKK Zipper"
+    ],
+    "sizes": [
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": true
+  },
+  {
+    "id": 2,
+    "name": "Armored Motorcycle Riding Hoodie",
+    "slug": "armored-motorcycle-riding-hoodie",
+    "category": "Jackets & Hoodies",
+    "subcategory": "Motorcycle Hoodies",
+    "description": "Premium kevlar-lined motorcycle hoodie with CE-approved armor at shoulders, elbows, and back. Casual style with maximum protection.",
+    "images": [
+      "/src/assets/images/products/Gemini_Generated_Image_ptg89rptg89rptg8.png",
+      "/src/assets/images/products/Gemini_Generated_Image_lpsfdmlpsfdmlpsf.png",
+      "/src/assets/images/products/Gemini_Generated_Image_v6kyyvv6kyyvv6ky.png",
+      "/src/assets/images/products/hoodie-pink-front.png",
+      "/src/assets/images/products/hoodie-pink-back.png",
+      "/src/assets/images/products/hoodie-pink-inside.png"
+    ],
+    "features": [
+      "Kevlar Lining",
+      "CE Armor Included",
+      "Reflective Logos",
+      "YKK Zippers"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Pink",
+      "Black",
+      "Grey"
+    ],
+    "in_stock": true,
+    "is_featured": true
+  },
+  {
+    "id": 3,
+    "name": "Racing Leather Suit Pro 1pc",
+    "slug": "racing-leather-suit-pro-1pc",
+    "category": "Motorcycle Suits",
+    "subcategory": "Motorcycle Leather Suit",
+    "description": "Full-grain 1.3mm cowhide leather suit with external TPU sliders and aerodynamic speed hump. Perforated panels for ventilation.",
+    "images": [
+      "/src/assets/images/products/product-suit-red.png"
+    ],
+    "features": [
+      "1.3mm Cowhide",
+      "Speed Hump",
+      "Internal Protectors",
+      "Stretch Panels"
+    ],
+    "sizes": [
+      "48",
+      "50",
+      "52",
+      "54",
+      "56",
+      "58"
+    ],
+    "colors": [
+      "Red/Black",
+      "Black/White"
+    ],
+    "in_stock": true,
+    "is_featured": true
+  },
+  {
+    "id": 4,
+    "name": "Cafe Racer Leather Jacket",
+    "slug": "cafe-racer-leather-jacket",
+    "category": "Jackets & Hoodies",
+    "subcategory": "Motorcycle Leather Jackets",
+    "description": "Classic vintage style leather jacket with CE armor and removable thermal liner. Perfect for both riding and casual wear.",
+    "images": [
+      "/src/assets/images/products/product-suit-black-back.jpg"
+    ],
+    "features": [
+      "Buffalo Leather",
+      "Removable Liner",
+      "CE Level 1 Armor",
+      "Quilted Shoulders"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Antique Brown",
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 5,
+    "name": "Pro Racing Gloves Black Red",
+    "slug": "pro-racing-gloves-black-red",
+    "category": "Motorcycle Gloves",
+    "subcategory": "Motorcycle Racing Gloves",
+    "description": "Kangaroo leather palm for superior feel and cowhide upper for durability. Carbon fiber knuckle and palm sliders.",
+    "images": [
+      "/src/assets/images/products/gloves-racing-red-black.png"
+    ],
+    "features": [
+      "Kangaroo Leather",
+      "Carbon Fiber Knuckles",
+      "Palm Sliders",
+      "Double Closure"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black/Red",
+      "Black/White"
+    ],
+    "in_stock": true,
+    "is_featured": true
+  },
+  {
+    "id": 6,
+    "name": "Pink Performance Balaclava",
+    "slug": "pink-performance-balaclava",
+    "category": "Motorcycle Balaclavas",
+    "subcategory": "Balaclava",
+    "description": "Moisture-wicking breathable balaclava with a special ponytail opening for riders with long hair.",
+    "images": [
+      "/src/assets/images/products/balaclava-pink-front.png",
+      "/src/assets/images/products/balaclava-pink-back.png"
+    ],
+    "features": [
+      "Moisture Wicking",
+      "Ponytail Hole",
+      "Seamless Design",
+      "Quick Dry"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "colors": [
+      "Pink"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 7,
+    "name": "Aero Round Travel Bag",
+    "slug": "aero-round-travel-bag",
+    "category": "Accessories",
+    "subcategory": "Accessories",
+    "description": "Durable 600D Cordura travel bag with waterproof zippers and a sleek aerodynamic round design.",
+    "images": [
+      "/src/assets/images/products/bag-round-black.png"
+    ],
+    "features": [
+      "600D Cordura",
+      "Waterproof Zippers",
+      "Adjustable Strap",
+      "Reinforced Base"
+    ],
+    "sizes": [
+      "Medium",
+      "Large"
+    ],
+    "colors": [
+      "Black/Red"
+    ],
+    "in_stock": true,
+    "is_featured": true
+  },
+  {
+    "id": 8,
+    "name": "JMX Multi-Color Racing Cap",
+    "slug": "jmx-multi-color-racing-cap",
+    "category": "Accessories",
+    "subcategory": "Accessories",
+    "description": "High-quality cotton twill cap with 3D embroidery JMX logo and adjustable snapback.",
+    "images": [
+      "/src/assets/images/products/caps-multi-white-bg.png"
+    ],
+    "features": [
+      "100% Cotton",
+      "3D Embroidery",
+      "Adjustable Fit",
+      "Pre-Curved Visor"
+    ],
+    "sizes": [
+      "Adjustable"
+    ],
+    "colors": [
+      "Black",
+      "Green",
+      "Maroon",
+      "White"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 9,
+    "name": "Pro Race Boots (Red)",
+    "slug": "pro-race-boots-red",
+    "category": "Motorcycle Boots",
+    "subcategory": "Motorcycle Racing Boot",
+    "description": "Full-height racing boots with replaceable magnesium toe sliders and TPU shin/heel protection.",
+    "images": [
+      "/src/assets/images/products/boots-racing-red-back.png"
+    ],
+    "features": [
+      "TPU Protection",
+      "Magnesium Sliders",
+      "Replaceable Parts",
+      "Ankle Support"
+    ],
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "colors": [
+      "Red/Black"
+    ],
+    "in_stock": true,
+    "is_featured": true
+  },
+  {
+    "id": 10,
+    "name": "Pro Race Boots (White)",
+    "slug": "pro-race-boots-white",
+    "category": "Motorcycle Boots",
+    "subcategory": "Motorcycle Racing Boot",
+    "description": "Clean white and black racing boots with advanced ventilation and comfort padding.",
+    "images": [
+      "/src/assets/images/products/boots-racing-white-side.png",
+      "/src/assets/images/products/boots-racing-white-back-white-bg.png"
+    ],
+    "features": [
+      "Ventilated",
+      "Comfort Lining",
+      "TPU Armor",
+      "Anti-Slip Sole"
+    ],
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "colors": [
+      "White/Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 11,
+    "name": "Urban Short Boots Black",
+    "slug": "urban-short-boots-black",
+    "category": "Motorcycle Boots",
+    "subcategory": "Urban & Chopper Boots",
+    "description": "Sleek ankle-height motorcycle boots with reinforced gear pads and classic look.",
+    "images": [
+      "/src/assets/images/products/boots-short-black-back.png"
+    ],
+    "features": [
+      "Reinforced Gear Pad",
+      "Ankle Support",
+      "Oil Resistant Sole"
+    ],
+    "sizes": [
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 12,
+    "name": "Stealth Pro Race Suit (Pink)",
+    "slug": "stealth-pro-race-suit-pink",
+    "category": "Motorcycle Suits",
+    "subcategory": "Motorcycle Leather Suit",
+    "description": "Limited edition performance racing suit in vibrant pink and black, featuring professional-grade armor.",
+    "images": [
+      "/src/assets/images/products/product-suit-pink.png"
+    ],
+    "features": [
+      "Kangaroo Leather Panels",
+      "Schoeller-Keprotec Stretch",
+      "CE Level 2 Armor"
+    ],
+    "sizes": [
+      "46",
+      "48",
+      "50",
+      "52",
+      "54"
+    ],
+    "colors": [
+      "Pink/Black"
+    ],
+    "in_stock": true,
+    "is_featured": true
+  },
+  {
+    "id": 13,
+    "name": "Textile Touring Suit (Adventure)",
+    "slug": "textile-touring-suit-adventure",
+    "category": "Motorcycle Suits",
+    "subcategory": "Motorcycle Textile Suit",
+    "description": "3-layer textile suit with removable waterproof and thermal liners. Perfect for cross-country adventure riding.",
+    "images": [
+      "/src/assets/images/products/1000014745.png"
+    ],
+    "features": [
+      "Cordura 600D",
+      "Removable Waterproof Membrane",
+      "Thermal Liner Included"
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL"
+    ],
+    "colors": [
+      "Grey/Black",
+      "Blue/Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 14,
+    "name": "Bikers Safety Short (Under-Armor)",
+    "slug": "bikers-safety-short-under-armor",
+    "category": "Protectors",
+    "subcategory": "Bikers Safety Short",
+    "description": "Protective undershorts with foam padding for hips and tailbone. Breathable mesh construction.",
+    "images": [
+      "/src/assets/images/products/1000014752.png"
+    ],
+    "features": [
+      "EVA Foam Padding",
+      "Breathable Mesh",
+      "Elastic Waistband"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 15,
+    "name": "Knee & Elbow Guard Set",
+    "slug": "knee-elbow-guard-set",
+    "category": "Protectors",
+    "subcategory": "Knee Guard & Elbow Guard",
+    "description": "Impact-resistant plastic shells with bio-foam padding for motocross and racing use.",
+    "images": [
+      "/src/assets/images/products/1000014869 (1).png"
+    ],
+    "features": [
+      "Impact Resistant Shell",
+      "Bio-Foam Padding",
+      "Adjustable Straps"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "colors": [
+      "Black/Red"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 16,
+    "name": "Body Armor Jacket Full",
+    "slug": "body-armor-jacket-full",
+    "category": "Protectors",
+    "subcategory": "Body Armors Jackets",
+    "description": "Full upper-body protection with CE-certified armor on back, chest, shoulders, and elbows.",
+    "images": [
+      "/src/assets/images/products/1000014970.png"
+    ],
+    "features": [
+      "Full Body Armor",
+      "CE Certified",
+      "Adjustable Kidney Belt"
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 17,
+    "name": "Red/Black Performance Base Layer Suit",
+    "slug": "red-black-base-layer-suit",
+    "category": "Motorcycle Base & Mid-Layers",
+    "subcategory": "Base Layer Suit",
+    "description": "High-performance compression base layer suit with flat-lock seams and moisture-wicking technology.",
+    "images": [
+      "/src/assets/images/products/1000014984.png",
+      "/src/assets/images/products/1000014979.png"
+    ],
+    "features": [
+      "High Impact PP",
+      "Adjustable Straps",
+      "Breathable Backing"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black/Yellow"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 18,
+    "name": "Stealth Black Base Layer Suit",
+    "slug": "stealth-black-base-layer-suit",
+    "category": "Motorcycle Base & Mid-Layers",
+    "subcategory": "Base Layer Suit",
+    "description": "All-black compression suit designed for maximum comfort under leather racing suits.",
+    "images": [
+      "/src/assets/images/products/1000014980.png",
+      "/src/assets/images/products/1000014981.png"
+    ],
+    "features": [
+      "Double Tension Straps",
+      "Padded Support",
+      "Mesh Panels"
+    ],
+    "sizes": [
+      "S/M",
+      "L/XL"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 19,
+    "name": "Pink Performance Base Layer Suit",
+    "slug": "pink-performance-base-layer-suit",
+    "category": "Motorcycle Base & Mid-Layers",
+    "subcategory": "Base Layer Suit",
+    "description": "Full pink performance base layer for riders who want to match their stealth pink gear.",
+    "images": [
+      "/src/assets/images/products/1000014982.png",
+      "/src/assets/images/products/1000014983.png"
+    ],
+    "features": [
+      "Heat Resistant Knees",
+      "Reinforced 600D Poly",
+      "Sublimated Graphics"
+    ],
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "Neon Yellow/Blue"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 20,
+    "name": "Motocross Pro Jersey",
+    "slug": "motocross-pro-jersey",
+    "category": "Motorcycle Apparel",
+    "subcategory": "Motocross Jersey",
+    "description": "Breathable moisture-wicking jersey with padded elbows and drop-tail design.",
+    "images": [
+      "/src/assets/images/products/1774451101216.png"
+    ],
+    "features": [
+      "Moisture Wicking",
+      "Padded Elbows",
+      "Fade-Free Graphics"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Red/White",
+      "Blue/Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "name": "Bikers Leather Vest Classic",
+    "slug": "bikers-leather-vest-classic",
+    "category": "Motorcycle Suits",
+    "subcategory": "Motorcycle Leather Vest",
+    "description": "Classic club-style leather vest with gun-metal snaps and concealed carry pockets.",
+    "images": [
+      "/src/assets/images/products/1000014983.png"
+    ],
+    "features": [
+      "Buffalo Leather",
+      "Concealed Carry Pockets",
+      "Snap Closure"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 22,
+    "name": "Leather Chaps Heavy Duty",
+    "slug": "leather-chaps-heavy-duty",
+    "category": "Motorcycle Suits",
+    "subcategory": "Motorcycle Leather Chaps",
+    "description": "Traditional thick cowhide leather chaps with adjustable belt and laced back.",
+    "images": [
+      "/src/assets/images/products/1000014984.png"
+    ],
+    "features": [
+      "Premium Cowhide",
+      "Adjustable Belt",
+      "Laced Back"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 23,
+    "name": "Waterproof Textile Jacket",
+    "slug": "waterproof-textile-jacket",
+    "category": "Jackets & Hoodies",
+    "subcategory": "Motorcycle Textile Jackets",
+    "description": "All-season textile jacket with waterproof membrane and thermal lining.",
+    "images": [
+      "/src/assets/images/products/1774449936495.png"
+    ],
+    "features": [
+      "Waterproof",
+      "Thermal Liner",
+      "CE Protectors"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black/Silver"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 24,
+    "name": "Adventure Touring Pants",
+    "slug": "adventure-touring-pants",
+    "category": "Motorcycle Apparel",
+    "subcategory": "Motorcycle Leather Pants",
+    "description": "Over-the-boot adventure pants with large vents and knee protection.",
+    "images": [
+      "/src/assets/images/products/1774450443348.png"
+    ],
+    "features": [
+      "Ventilated",
+      "Knee Protectors",
+      "Waist Adjusters"
+    ],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "Sand/Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 25,
+    "name": "Motocross Gloves Impact",
+    "slug": "motocross-gloves-impact",
+    "category": "Motorcycle Gloves",
+    "subcategory": "Motocross Gloves",
+    "description": "Lightweight MX gloves with padded palms and silicone finger grips for lever control.",
+    "images": [
+      "/src/assets/images/products/1774450606341.png"
+    ],
+    "features": [
+      "Padded Palm",
+      "Silicone Grips",
+      "Neoprene Cuff"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Green/Black",
+      "Blue/Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 26,
+    "name": "Base Layer Thermal Shirt",
+    "slug": "base-layer-thermal-shirt",
+    "category": "Motorcycle Base & Mid-Layers",
+    "subcategory": "Motorcycle Textile Apparel",
+    "description": "Thermal base layer to keep you warm on cold rides. Compression fit and moisture wicking.",
+    "images": [
+      "/src/assets/images/products/1774451101216.png"
+    ],
+    "features": [
+      "Thermal Retention",
+      "Moisture Wicking",
+      "Compression Fit"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 27,
+    "name": "Motorcycle Knee Sliders Pro",
+    "slug": "motorcycle-knee-sliders-pro",
+    "category": "Accessories",
+    "subcategory": "Motorcycle Knee Sliders",
+    "description": "Traditional hard-wearing knee sliders with velcro backing for racing suits.",
+    "images": [
+      "/src/assets/images/products/caps-multi-colors.png"
+    ],
+    "features": [
+      "Durable Material",
+      "Velcro Backing"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "colors": [
+      "Black",
+      "Yellow",
+      "Red"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 28,
+    "name": "Reflective Safety Vest",
+    "slug": "reflective-safety-vest",
+    "category": "Motorcycle Apparel",
+    "subcategory": "Accessories",
+    "description": "High-visibility reflective vest for night riding safety. Lightweight and adjustable.",
+    "images": [
+      "/src/assets/images/products/1000014963.png"
+    ],
+    "features": [
+      "Hi-Vis Color",
+      "Reflective Tapes",
+      "Adjustable Fit"
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Neon Yellow"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 29,
+    "name": "Premium Thermal Liner",
+    "slug": "premium-thermal-liner",
+    "category": "Motorcycle Base & Mid-Layers",
+    "subcategory": "Motorcycle Textile Apparel",
+    "description": "Replacement thermal liner for JMX jackets. Ultra-thin but highly insulating.",
+    "images": [
+      "/src/assets/images/products/1000014732.png"
+    ],
+    "features": [
+      "Ultra-Thin",
+      "High Insulation",
+      "Zipper Compatible"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 30,
+    "name": "Bates Style Racing Boot",
+    "slug": "bates-style-racing-boot",
+    "category": "Motorcycle Boots",
+    "subcategory": "Motorcycle Racing Boot",
+    "description": "Classic 80s style racing boot with modern safety features and ankle protection.",
+    "images": [
+      "/src/assets/images/products/boots-racing-white-side.png"
+    ],
+    "features": [
+      "Retro Design",
+      "Modern Safety",
+      "Calf Adjustment"
+    ],
+    "sizes": [
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "colors": [
+      "Black/White"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 31,
+    "name": "Short Ankle Racing Boots",
+    "slug": "short-ankle-racing-boots",
+    "category": "Motorcycle Boots",
+    "subcategory": "Bikers Short Racing Boot",
+    "description": "Short boots designed for track use and street riding. Features toe sliders and ankle armor.",
+    "images": [
+      "/src/assets/images/products/boots-short-black-side.png"
+    ],
+    "features": [
+      "Toe Sliders",
+      "Ankle Armor",
+      "Velcro Straps"
+    ],
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 32,
+    "name": "Titanium Knuckle Gloves",
+    "slug": "titanium-knuckle-gloves",
+    "category": "Motorcycle Gloves",
+    "subcategory": "Motorcycle Racing Gloves",
+    "description": "Top-tier gloves with titanium-plated knuckles for maximum impact and abrasion resistance.",
+    "images": [
+      "/src/assets/images/products/gloves-racing-red-black.png"
+    ],
+    "features": [
+      "Titanium Knuckles",
+      "Bridge Finger Support",
+      "External Sliders"
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black/Red"
+    ],
+    "in_stock": true,
+    "is_featured": true
+  },
+  {
+    "id": 33,
+    "name": "Camouflage Balaclava",
+    "slug": "camouflage-balaclava",
+    "category": "Motorcycle Balaclavas",
+    "subcategory": "Balaclava",
+    "description": "Tactical style balaclava with desert camo pattern. Durable and lightweight.",
+    "images": [
+      "/src/assets/images/products/balaclava-pink-front.png"
+    ],
+    "features": [
+      "Camo Print",
+      "Breathable",
+      "Multi-Way Wearing"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "colors": [
+      "Army Camo"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 34,
+    "name": "JMX Racing Backpack",
+    "slug": "jmx-racing-backpack",
+    "category": "Accessories",
+    "subcategory": "Accessories",
+    "description": "Hardshell aerodynamic backpack with laptop compartment and helmet carrier.",
+    "images": [
+      "/src/assets/images/products/bag-round-black.png"
+    ],
+    "features": [
+      "Hardshell",
+      "Helmet Carrier",
+      "Waterproof Cover"
+    ],
+    "sizes": [
+      "25 Liters"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 35,
+    "name": "Full Set CE Internal Armor",
+    "slug": "full-set-ce-internal-armor",
+    "category": "Accessories",
+    "subcategory": "CE Approved Protections",
+    "description": "Set of 5 protectors (2 shoulders, 2 elbows, 1 back) to upgrade any jacket.",
+    "images": [
+      "/src/assets/images/products/hoodie-pink-inside.png"
+    ],
+    "features": [
+      "CE Approved",
+      "Memory Foam",
+      "Universal Fit"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "colors": [
+      "Yellow"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 36,
+    "name": "Gore-Tex Touring Boot",
+    "slug": "gore-tex-touring-boot",
+    "category": "Motorcycle Boots",
+    "subcategory": "Motorcycle Touring Boots",
+    "description": "Breathable and 100% waterproof touring boots for long-distance comfort in any weather.",
+    "images": [
+      "/src/assets/images/products/boots-racing-white-side.png"
+    ],
+    "features": [
+      "Gore-Tex Membrane",
+      "Internal Armor",
+      "Zip and Velcro Closure"
+    ],
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": true
+  },
+  {
+    "id": 37,
+    "name": "Leather Racing Jacket White",
+    "slug": "leather-racing-jacket-white",
+    "category": "Jackets & Hoodies",
+    "subcategory": "Motorcycle Leather Jackets",
+    "description": "Sharp white and black leather jacket with speed hump and CE armor. High visibility and style.",
+    "images": [
+      "/src/assets/images/products/product-suit-black-back.jpg"
+    ],
+    "features": [
+      "Perforated Cowhide",
+      "Speed Hump",
+      "Internal Protectors"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "White/Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 38,
+    "name": "Textile Hybrid Suit",
+    "slug": "textile-hybrid-suit",
+    "category": "Motorcycle Suits",
+    "subcategory": "Motorcycle Textile Suit",
+    "description": "Combination of textile and leather panels for the best of both worlds: airflow and safety.",
+    "images": [
+      "/src/assets/images/products/1774449936495.png"
+    ],
+    "features": [
+      "Hybrid Construction",
+      "Mesh Panels",
+      "Leather Sliders"
+    ],
+    "sizes": [
+      "48",
+      "50",
+      "52",
+      "54",
+      "56"
+    ],
+    "colors": [
+      "Black/Silver"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 39,
+    "name": "Winter Riding Gloves",
+    "slug": "winter-riding-gloves",
+    "category": "Motorcycle Gloves",
+    "subcategory": "Motorcycle Racing Gloves",
+    "description": "Thickly insulated waterproof gloves with long cuffs to keep you riding through winter.",
+    "images": [
+      "/src/assets/images/products/gloves-racing-red-black.png"
+    ],
+    "features": [
+      "Waterproof",
+      "Insulated",
+      "Visor Wiper"
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 40,
+    "name": "Performance Base Layer Pants",
+    "slug": "performance-base-layer-pants",
+    "category": "Motorcycle Base & Mid-Layers",
+    "subcategory": "Motorcycle Textile Apparel",
+    "description": "Keeps you cool in summer and warm in winter. Seamless construction for no-chase riding.",
+    "images": [
+      "/src/assets/images/products/1774451101216.png"
+    ],
+    "features": [
+      "Four-way Stretch",
+      "Odor Resistant",
+      "Sweat Wicking"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Grey"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 41,
+    "name": "Vintage Brown Leather Suit",
+    "slug": "vintage-brown-leather-suit",
+    "category": "Motorcycle Suits",
+    "subcategory": "Motorcycle Leather Suit",
+    "description": "Retro styled brown leather suit for classic bike enthusiasts. Modern protection hidden inside.",
+    "images": [
+      "/src/assets/images/products/product-suit-red.png"
+    ],
+    "features": [
+      "Antique Leather",
+      "Internal Knee Armor",
+      "Soft Cuff"
+    ],
+    "sizes": [
+      "50",
+      "52",
+      "54",
+      "56"
+    ],
+    "colors": [
+      "Vintage Brown"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 42,
+    "name": "Mesh Summer Riding Jacket",
+    "slug": "mesh-summer-riding-jacket",
+    "category": "Jackets & Hoodies",
+    "subcategory": "Motorcycle Textile Jackets",
+    "description": "Ultra-breezy mesh jacket for hot climate riding. Full protector set and hi-vis piping.",
+    "images": [
+      "/src/assets/images/products/product-suit-pink.png"
+    ],
+    "features": [
+      "Max Airflow Mesh",
+      "Reflective Piping",
+      "Velcro Arms"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black/Fluo"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 43,
+    "name": "Custom Fit Drag Suit",
+    "slug": "custom-fit-drag-suit",
+    "category": "Motorcycle Suits",
+    "subcategory": "Motorcycle Leather Suit",
+    "description": "Extra heavy duty suit for drag racing. Reinforced seams and tailored fit available.",
+    "images": [
+      "/src/assets/images/products/product-suit-red.png"
+    ],
+    "features": [
+      "Triple Stitched",
+      "Thickest Cowhide",
+      "Aerodynamic Design"
+    ],
+    "sizes": [
+      "Custom",
+      "52",
+      "54",
+      "56"
+    ],
+    "colors": [
+      "Black/Red"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 44,
+    "name": "Leather Moto Leggings",
+    "slug": "leather-moto-leggings",
+    "category": "Motorcycle Apparel",
+    "subcategory": "Motorcycle Leather Pants",
+    "description": "High-waist leather leggings with stretch panels and knee armor for safe and stylish riding.",
+    "images": [
+      "/src/assets/images/products/1000014984.png"
+    ],
+    "features": [
+      "High Waist",
+      "Stretch Panels",
+      "Internal Armor"
+    ],
+    "sizes": [
+      "26",
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 45,
+    "name": "Summer Short Gloves",
+    "slug": "summer-short-gloves",
+    "category": "Motorcycle Gloves",
+    "subcategory": "Motorcycle Racing Gloves",
+    "description": "Lightweight short cuff gloves with perforated leather and mesh for maximum cooling.",
+    "images": [
+      "/src/assets/images/products/1000014752.png"
+    ],
+    "features": [
+      "Perforated Leather",
+      "Mesh Inserts",
+      "Carbon Knuckles"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 46,
+    "name": "Motocross Boots Professional",
+    "slug": "motocross-boots-professional",
+    "category": "Motorcycle Boots",
+    "subcategory": "Bikers Adventure Boots",
+    "description": "High-performance MX boots with pivot system for ankle mobility and heavy duty buckles.",
+    "images": [
+      "/src/assets/images/products/boots-racing-red-back.png"
+    ],
+    "features": [
+      "Pivot Ankle System",
+      "Heat Shields",
+      "Adjustable Buckles"
+    ],
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46"
+    ],
+    "colors": [
+      "White/Red/Black"
+    ],
+    "in_stock": true,
+    "is_featured": true
+  },
+  {
+    "id": 47,
+    "name": "Casual Riding Shoes",
+    "slug": "casual-riding-shoes",
+    "category": "Motorcycle Boots",
+    "subcategory": "Motorcycle Sneaker Boots",
+    "description": "Looks like a sneaker, protects like a boot. Reinforced heels and toes for urban use.",
+    "images": [
+      "/src/assets/images/products/boots-short-black-side.png"
+    ],
+    "features": [
+      "Sneaker Style",
+      "Heel/Toe Armor",
+      "Lace and Zip"
+    ],
+    "sizes": [
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "colors": [
+      "Grey/Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 48,
+    "name": "JMX Limited Edition Cap",
+    "slug": "jmx-limited-edition-cap",
+    "category": "Accessories",
+    "subcategory": "Accessories",
+    "description": "Commemorative cap celebrating JMX racing heritage. Unique stitching and premium fabrics.",
+    "images": [
+      "/src/assets/images/products/cap-black-white-bg.png"
+    ],
+    "features": [
+      "Premium Fabric",
+      "Unique Stitching",
+      "Collector Item"
+    ],
+    "sizes": [
+      "Adjustable"
+    ],
+    "colors": [
+      "Black/Gold"
+    ],
+    "in_stock": true,
+    "is_featured": true
+  },
+  {
+    "id": 49,
+    "name": "Adventure Tank Bag",
+    "slug": "adventure-tank-bag",
+    "category": "Accessories",
+    "subcategory": "Accessories",
+    "description": "Expandable tank bag with map holder and rain cover. Fits most adventure and touring bikes.",
+    "images": [
+      "/src/assets/images/products/bag-round-black.png"
+    ],
+    "features": [
+      "Expandable",
+      "Map Holder",
+      "Magnetic Mount"
+    ],
+    "sizes": [
+      "15-20 Liters"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "in_stock": true,
+    "is_featured": false
+  },
+  {
+    "id": 50,
+    "name": "Carbon Racing Suit S5",
+    "slug": "carbon-racing-suit-s5",
+    "category": "Motorcycle Suits",
+    "subcategory": "Motorcycle Leather Suit",
+    "description": "Next-gen racing suit with integrated airbag preparation and carbon fiber sliders on all joints.",
+    "images": [
+      "/src/assets/images/products/product-suit-red.png"
+    ],
+    "features": [
+      "Airbag Ready",
+      "Carbon Fiber Sliders",
+      "Stretch Panels"
+    ],
+    "sizes": [
+      "48",
+      "50",
+      "52",
+      "54",
+      "56"
+    ],
+    "colors": [
+      "Tricolore (Red/White/Green)"
+    ],
+    "in_stock": true,
+    "is_featured": true
+  }
+]
