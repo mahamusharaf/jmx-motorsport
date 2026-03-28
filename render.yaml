@@ -2,6 +2,7 @@ services:
   - type: web
     name: jmx-motorsport
     runtime: python
+    pythonVersion: "3.12.3"
     buildCommand: pip install -r backend/requirements.txt
     startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
@@ -21,6 +22,4 @@ services:
         sync: false
       - key: ALLOWED_ORIGINS
         sync: false
-      - key: PYTHON_VERSION
-        value: "3.12"
     healthCheckPath: /health
