@@ -23,3 +23,7 @@ Thumbs.db
 *.egg-info/
 dist/
 build/
+
+# Generated logs
+migration_log.txt
+*.log
