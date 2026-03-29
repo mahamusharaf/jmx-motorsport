@@ -1818,7 +1818,7 @@
             || (p.images && p.images[0])
             || '';
           const card = document.createElement('a');
-          card.href = 'products.html';
+          card.href = `products.html?category=${encodeURIComponent(p.category)}`;
           card.className = 'product-card';
           card.innerHTML = `
             <div class="product-img-wrap">
