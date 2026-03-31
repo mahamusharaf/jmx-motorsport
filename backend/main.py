@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from fastapi.staticfiles import StaticFiles
+
 
 from app.database import connect_to_mongo, close_mongo_connection
 from app.routes.products import router as products_router
@@ -62,6 +62,11 @@ app.add_middleware(
 )
 
 # --- Health endpoint (used by Render / Railway for uptime checks) ------- #
+@app.get("/", tags=["Ops"])
+async def root():
+    return JSONResponse({"service": "JMX Motorsport API", "status": "running", "docs": "/docs"})
+
+
 @app.get("/health", tags=["Ops"])
 async def health_check():
     return JSONResponse({"status": "ok"})
@@ -71,6 +76,4 @@ async def health_check():
 app.include_router(products_router)
 app.include_router(newsletter_router)
 
-# --- Mount Frontend (Static Files) -------------------------------------- #
-frontend_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-app.mount("/", StaticFiles(directory=frontend_path, html=True), name="frontend")
+
