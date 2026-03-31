@@ -1,1 +1,1866 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JMX | Ride Beyond</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;0,900;1,700;1,900&family=Barlow:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --red: #C41230;
+      --black: #0a0a0a;
+      --white: #ffffff;
+      --grey: #1a1a1a;
+      --light: #f5f5f5;
+      --mid: #888;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: var(--black);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ── TOP BAR ── */
+    .top-bar {
+      background: #a10f27;
+      /* slight dark red for the bar */
+      color: var(--white);
+      text-align: center;
+      padding: 8px 40px;
+      font-size: 13px;
+      font-weight: 500;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 101;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 40px;
+      left: 0;
+      right: 0;
+      z-index: 102;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      height: 70px;
+      background: rgba(10, 10, 10, 0.98);
+      border-bottom: 1px solid #222;
+      transition: top 0.3s;
+    }
+
+    nav.scrolled {
+      top: 0;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .nav-logo-icon {
+      width: 36px;
+      height: 36px;
+    }
+
+    .nav-logo-text {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 28px;
+      letter-spacing: 3px;
+      color: var(--white);
+    }
+
+    .nav-logo-text span {
+      color: var(--red);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+      margin-left: 5vw;
+    }
+
+    .nav-links a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--white);
+      text-decoration: none;
+      opacity: 0.85;
+      transition: opacity 0.2s, color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+      color: var(--red);
+    }
+
+    .nav-arrow {
+      font-size: 0.55rem;
+      opacity: 0.6;
+    }
+
+    /* ── MEGA DROPDOWN ── */
+    .has-dropdown {
+      position: relative;
+    }
+
+    .has-dropdown>a {
+      position: relative;
+      padding-bottom: 24px;
+      /* expand hover area down */
+    }
+
+    .has-dropdown>a::after {
+      content: '';
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--red);
+      transition: width 0.3s;
+    }
+
+    .has-dropdown:hover>a::after {
+      width: 100%;
+    }
+
+    .mega-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin-top: -6px;
+      /* pull up slightly */
+      background: #111;
+      width: 700px;
+      padding: 30px;
+      display: flex;
+      gap: 50px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+      border-top: 2px solid var(--red);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      z-index: 100;
+    }
+
+    .has-dropdown:hover .mega-dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-col {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .dropdown-col h4 {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      color: #777;
+      margin-bottom: 8px;
+    }
+
+    .dropdown-col a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--white);
+      text-transform: none;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      opacity: 1;
+      padding-bottom: 0;
+      transition: color 0.2s;
+    }
+
+    .dropdown-col a::after {
+      display: none;
+      /* remove red underline from sublinks */
+    }
+
+    .dropdown-col a:hover {
+      color: var(--white);
+      text-decoration: underline;
+    }
+
+    .dropdown-promo {
+      margin-left: auto;
+      width: 260px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .promo-img-box {
+      position: relative;
+      height: 160px;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .promo-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.7;
+      transition: transform 0.5s;
+    }
+
+    .dropdown-promo:hover .promo-img-box img {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .promo-text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Barlow Condensed', sans-serif;
+      line-height: 1.1;
+    }
+
+    .promo-text .light-text {
+      font-weight: 700;
+      font-size: 22px;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+
+    .promo-text .bold-text {
+      font-weight: 900;
+      font-size: 22px;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+
+    .promo-btn {
+      display: block;
+      background: var(--red);
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .promo-btn:hover {
+      background: #a00f27;
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .nav-icon-btn {
+      background: none;
+      border: none;
+      color: rgba(255, 255, 255, 0.8);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding: 4px;
+      transition: color 0.2s;
+    }
+
+    .nav-icon-btn:hover {
+      color: var(--white);
+    }
+
+    .nav-icon-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .nav-icon-btn .flag {
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+
+    .has-dropdown-region {
+      position: relative;
+      padding: 10px 0;
+    }
+
+    .dropdown-region {
+      position: absolute;
+      top: 100%;
+      right: -10px;
+      background: #111;
+      min-width: 140px;
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+      border-top: 2px solid var(--red);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      z-index: 100;
+    }
+
+    .has-dropdown-region:hover .dropdown-region {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-region a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--white);
+      text-decoration: none;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .dropdown-region a:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--red);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      min-height: 600px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-slideshow {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .hero-slider {
+      display: flex;
+      width: 500%;
+      height: 100%;
+      animation: heroSlide 16s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+    }
+
+    .hero-slide {
+      width: 20%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .hero-slide-1 {
+      background-image: url('src/assets/images/hero-bg-2b.png');
+    }
+
+    .hero-slide-2 {
+      background-image: url('src/assets/images/hero-bg-3.jpg');
+    }
+
+    .hero-slide-3 {
+      background-image: url('src/assets/images/hero-bg-4.png');
+    }
+
+    .hero-slide-4 {
+      background-image: url('src/assets/images/hero-bg-5.jpg');
+    }
+
+    .hero-mask {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.2) 100%),
+        linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    @keyframes heroSlide {
+      0% {
+        transform: translateX(0);
+      }
+
+      20% {
+        transform: translateX(0);
+      }
+
+      25% {
+        transform: translateX(-20%);
+      }
+
+      45% {
+        transform: translateX(-20%);
+      }
+
+      50% {
+        transform: translateX(-40%);
+      }
+
+      70% {
+        transform: translateX(-40%);
+      }
+
+      75% {
+        transform: translateX(-60%);
+      }
+
+      95% {
+        transform: translateX(-60%);
+      }
+
+      100% {
+        transform: translateX(-80%);
+      }
+    }
+
+    /* Red X logo watermark */
+    .hero-watermark {
+      position: absolute;
+      right: 6%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 320px;
+      opacity: 0.08;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 180px 60px 0;
+      max-width: 860px;
+      animation: heroUp 0.9s cubic-bezier(.16, 1, .3, 1) 0.3s both;
+    }
+
+    @keyframes heroUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-eyebrow {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 40px;
+      height: 2px;
+      background: var(--red);
+    }
+
+    .hero-headline {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: clamp(56px, 8vw, 110px);
+      line-height: 0.92;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      margin-bottom: 28px;
+    }
+
+    .hero-headline .outline {
+      -webkit-text-stroke: 2px var(--white);
+      color: transparent;
+    }
+
+    .hero-headline .solid {
+      color: var(--white);
+    }
+
+    .hero-sub {
+      font-size: 17px;
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.6;
+      margin-bottom: 40px;
+      max-width: 420px;
+      font-weight: 400;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--red);
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 16px 36px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-primary:hover {
+      background: #a00f27;
+      transform: translateY(-2px);
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+      padding-bottom: 2px;
+      transition: border-color 0.2s;
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--red);
+      color: var(--red);
+    }
+
+    .btn-ghost svg {
+      transition: transform 0.2s;
+    }
+
+    .btn-ghost:hover svg {
+      transform: translateX(4px);
+    }
+
+    /* ── RIDE STRIP ── */
+    .ride-strip {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      height: 220px;
+      overflow: hidden;
+    }
+
+    .ride-card {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      text-decoration: none;
+      flex: 1;
+    }
+
+    .ride-card-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.5s cubic-bezier(.25, .46, .45, .94);
+      filter: brightness(0.55);
+    }
+
+    .ride-card:hover .ride-card-bg {
+      transform: scale(1.07);
+      filter: brightness(0.7);
+    }
+
+    .ride-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(196, 18, 48, 0.5) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .ride-card:hover::after {
+      opacity: 1;
+    }
+
+    .ride-card-label {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: 2;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 22px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .ride-card-label::before {
+      content: '';
+      width: 24px;
+      height: 3px;
+      background: var(--red);
+      display: block;
+      transition: width 0.3s;
+    }
+
+    .ride-card:hover .ride-card-label::before {
+      width: 40px;
+    }
+
+    /* ride backgrounds */
+    .ride-race .ride-card-bg {
+      background-image: url('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&q=75');
+    }
+
+    .ride-touring .ride-card-bg {
+      background-image: url('https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=600&q=75');
+    }
+
+    .ride-road .ride-card-bg {
+      background-image: url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=600&q=75');
+    }
+
+    .ride-urban .ride-card-bg {
+      background-image: url('https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=600&q=75');
+    }
+
+    .ride-offroad .ride-card-bg {
+      background-image: url('https://images.unsplash.com/photo-1558618047-f4e60cde1913?w=600&q=75');
+    }
+
+    /* ── SECTION COMMON ── */
+    section {
+      padding: 100px 60px;
+    }
+
+    .section-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-label::before {
+      content: '';
+      width: 30px;
+      height: 2px;
+      background: var(--red);
+      display: inline-block;
+    }
+
+    .section-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: clamp(42px, 5vw, 72px);
+      text-transform: uppercase;
+      line-height: 0.95;
+      margin-bottom: 24px;
+    }
+
+    /* ── RACE READY ── */
+    .race-ready {
+      background: var(--black);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      padding: 0;
+      min-height: 600px;
+    }
+
+    .race-ready-img {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .race-ready-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s;
+    }
+
+    .race-ready-img:hover img {
+      transform: scale(1.04);
+    }
+
+    .race-ready-content {
+      background: var(--grey);
+      padding: 80px 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .race-ready-content p {
+      color: rgba(255, 255, 255, 0.65);
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    /* ── TECH BAND ── */
+    .tech-band {
+      background: var(--red);
+      padding: 26px 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      overflow: hidden;
+    }
+
+    .tech-band-text {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 28px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .tech-badges {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .tech-badge {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      padding: 8px 18px;
+      white-space: nowrap;
+      transition: border-color 0.2s, background 0.2s;
+      cursor: pointer;
+    }
+
+    .tech-badge:hover {
+      border-color: var(--white);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    /* ── COLLECTION GRID ── */
+    .collection-section {
+      background: var(--light);
+      color: var(--black);
+    }
+
+    .collection-section .section-title {
+      color: var(--black);
+    }
+
+    .collection-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 50px;
+    }
+
+    .collection-header a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--red);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 2px solid var(--red);
+      padding-bottom: 2px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+    }
+
+    .product-card {
+      background: var(--white);
+      overflow: hidden;
+      text-decoration: none;
+      color: var(--black);
+      display: block;
+      transition: box-shadow 0.2s;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-img-wrap {
+      position: relative;
+      aspect-ratio: 3/4;
+      overflow: hidden;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .product-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform 0.5s;
+    }
+
+    .product-card:hover .product-img-wrap img {
+      transform: scale(1.05);
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 5px 10px;
+    }
+
+    .product-badge.new {
+      background: var(--red);
+    }
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .product-cat {
+      font-size: 12px;
+      color: var(--mid);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .product-price {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--red);
+    }
+
+    /* ── RIDER FEATURE ── */
+    .rider-section {
+      background: var(--black);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+    }
+
+    .rider-bg {
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=1600&q=80') center/cover;
+      filter: brightness(0.3);
+    }
+
+    .rider-content {
+      position: relative;
+      z-index: 2;
+      padding: 100px 60px;
+      max-width: 600px;
+    }
+
+    .rider-content p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    /* ── CATEGORIES ── */
+    .cats-section {
+      background: var(--grey);
+      padding: 100px 60px;
+    }
+
+    .cats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px;
+      margin-top: 50px;
+    }
+
+    .cat-card {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+    }
+
+    .cat-card-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.5s;
+      filter: brightness(0.5);
+    }
+
+    .cat-card:hover .cat-card-bg {
+      transform: scale(1.06);
+      filter: brightness(0.65);
+    }
+
+    .cat-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 60%);
+    }
+
+    .cat-label {
+      position: absolute;
+      bottom: 28px;
+      left: 28px;
+      z-index: 2;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 30px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    .cat-sub {
+      position: absolute;
+      bottom: 10px;
+      left: 28px;
+      z-index: 2;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--red);
+    }
+
+    .cat-jackets .cat-card-bg {
+      background-image: url('https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=700&q=75');
+    }
+
+    .cat-gloves .cat-card-bg {
+      background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?w=700&q=75');
+    }
+
+    .cat-helmets .cat-card-bg {
+      background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=75');
+    }
+
+    .cat-boots .cat-card-bg {
+      background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&q=75');
+    }
+
+    .cat-suits .cat-card-bg {
+      background-image: url('https://images.unsplash.com/photo-1561717507-100a506cd07a?w=700&q=75');
+    }
+
+    .cat-pants .cat-card-bg {
+      background-image: url('https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=700&q=75');
+    }
+
+    /* ── MARQUEE ── */
+    .marquee-band {
+      background: var(--black);
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+      overflow: hidden;
+      padding: 18px 0;
+    }
+
+    .marquee-track {
+      display: flex;
+      gap: 60px;
+      width: max-content;
+      animation: marquee 22s linear infinite;
+    }
+
+    @keyframes marquee {
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .marquee-item {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--mid);
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .marquee-item::after {
+      content: '✕';
+      color: var(--red);
+      font-size: 10px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #050505;
+      padding: 70px 60px 40px;
+      border-top: 1px solid #1a1a1a;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 0.8fr 1.2fr 1.5fr;
+      gap: 40px;
+      margin-bottom: 60px;
+      align-items: start;
+    }
+
+    .footer-map-wrap {
+      margin-top: 12px;
+      border: 1px solid #333;
+      overflow: hidden;
+      border-radius: 4px;
+      height: 120px;
+      background: #111;
+    }
+
+    .footer-address {
+      margin-top: 15px;
+      font-size: 13px;
+      color: var(--mid);
+      line-height: 1.6;
+      font-family: 'Barlow', sans-serif;
+    }
+
+    .footer-brand p {
+      color: var(--mid);
+      font-size: 14px;
+      line-height: 1.7;
+      margin-top: 16px;
+      margin-bottom: 24px;
+      max-width: 260px;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 14px;
+    }
+
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      border: 1px solid #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--mid);
+      font-size: 13px;
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .footer-social a:hover {
+      border-color: var(--red);
+      color: var(--red);
+    }
+
+    .footer-col h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-top: 12px;
+      /* Visual alignment with logo top */
+      margin-bottom: 20px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-col ul a {
+      color: var(--mid);
+      font-size: 14px;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-col ul a:hover {
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #1a1a1a;
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-bottom p {
+      color: #444;
+      font-size: 13px;
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .footer-bottom-links a {
+      color: #444;
+      font-size: 13px;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-bottom-links a:hover {
+      color: var(--white);
+    }
+
+    /* ── HAMBURGER (mobile hint) ── */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      nav {
+        padding: 0 24px;
+      }
+
+      .nav-logo {
+        position: static;
+        transform: none;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .hero-content {
+        padding: 0 24px 70px;
+      }
+
+      .hero-headline {
+        font-size: 60px;
+      }
+
+      section {
+        padding: 60px 24px;
+      }
+
+      .race-ready {
+        grid-template-columns: 1fr;
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      footer {
+        padding: 50px 24px 40px;
+      }
+
+      .ride-strip {
+        grid-template-columns: repeat(3, 1fr);
+        height: 180px;
+      }
+
+      .ride-strip .ride-card:nth-child(n+4) {
+        display: none;
+      }
+
+      .tech-band {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .collection-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+    }
+
+    /* Certifications Section */
+    .certifications {
+      padding: 60px 40px;
+      background: #fff;
+      text-align: center;
+      border-top: 1px solid #eee;
+    }
+
+    .cert-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .cert-container img {
+      width: 100%;
+      height: auto;
+      max-width: 1000px;
+    }
+
+    /* ── MOBILE DRAWER ── */
+    .mobile-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 300px;
+      background: #0d0d0d;
+      z-index: 9999;
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(.4, 0, .2, 1);
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      border-left: 1px solid #222;
+    }
+
+    .mobile-drawer.open {
+      transform: translateX(0);
+    }
+
+    .drawer-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 9998;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+
+    .drawer-overlay.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 24px;
+      border-bottom: 1px solid #222;
+    }
+
+    .drawer-header span {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--red);
+    }
+
+    .drawer-close {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 26px;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .drawer-section-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #555;
+      padding: 24px 24px 10px;
+    }
+
+    .drawer-links {
+      list-style: none;
+    }
+
+    .drawer-links li a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 24px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 17px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ddd;
+      text-decoration: none;
+      border-bottom: 1px solid #1a1a1a;
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .drawer-links li a::before {
+      content: '';
+      width: 3px;
+      height: 18px;
+      background: var(--red);
+      border-radius: 2px;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .drawer-links li a:hover {
+      color: #fff;
+      background: rgba(196, 18, 48, 0.07);
+    }
+
+    .drawer-links li a:hover::before {
+      opacity: 1;
+    }
+
+    .drawer-links {
+      padding-bottom: 80px;
+      /* Ensure bottom links are visible above browser UI */
+    }
+  </style>
+</head>
+
+<body>
+  <svg style="width:0;height:0;position:absolute;z-index:-1;" aria-hidden="true" focusable="false">
+    <filter id="invert-black-preserve-red">
+      <feColorMatrix type="matrix" values="
+         1 -1 -1  0  1
+        -2  1  0  0  1
+        -2  0  1  0  1
+         0  0  0  1  0" />
+    </filter>
+  </svg>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    Welcome to JMX Motorsports, A Manufacturer & Supplier company in Pakistan.
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">
+      <img src="src/assets/images/jmx-logo.png" alt="JMX Motorsports"
+        style="height:90px;width:auto;filter:url(#invert-black-preserve-red);">
+    </a>
+
+    <ul class="nav-links">
+      <li class="has-dropdown">
+        <a href="#">Categories <span class="nav-arrow">&#9660;</span></a>
+        <div class="mega-dropdown">
+          <div class="dropdown-col">
+            <h4>Unisex</h4>
+            <a href="products.html?category=Leather%20Suits">Leather Suits</a>
+            <a href="products.html?category=Jackets%20%26%20Hoodies">Jackets & Hoodies</a>
+            <a href="products.html?category=Gloves">Motorcycle Gloves</a>
+            <a href="products.html?category=Boots">Motorcycle Boots</a>
+            <a href="products.html?category=Protectors">Protectors</a>
+            <a href="products.html?category=Headwear">Balaclava's</a>
+            <a href="products.html?category=Baselayer">Base & Mid-Layers</a>
+            <a href="products.html?category=Accessories">Accessories</a>
+            <a href="products.html">View all</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="has-dropdown">
+        <a href="#">Discover <span class="nav-arrow">&#9660;</span></a>
+        <div class="mega-dropdown" style="width:220px; right:0; left:auto;">
+          <div class="dropdown-col">
+            <a href="aboutus.html">About Us</a>
+            <a href="size-chart.html">Size Chart</a>
+            <a href="mailto:info@jmxmotorsports.com">Contact Us</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-slideshow">
+      <div class="hero-slider">
+        <div class="hero-slide hero-slide-1"></div>
+        <div class="hero-slide hero-slide-2"></div>
+        <div class="hero-slide hero-slide-4"></div>
+        <div class="hero-slide hero-slide-1"></div>
+      </div>
+    </div>
+    <div class="hero-mask"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">New Collection 2026</div>
+      <h1 class="hero-headline">
+        <span class="outline">BUILT FOR PRECISION.</span><br>
+        <span class="solid">ENGINEERED FOR <span style="color: var(--red);">SPEED.</span></span>
+      </h1>
+      <div class="hero-btns">
+        <a href="products.html" class="btn-primary">View Collection</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MARQUEE -->
+  <div class="marquee-band">
+    <div class="marquee-track">
+      <span class="marquee-item">Race</span>
+      <span class="marquee-item">Protection</span>
+      <span class="marquee-item">Performance</span>
+      <span class="marquee-item">JMX 2026</span>
+      <span class="marquee-item">Ride Beyond</span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee-item">Race</span>
+      <span class="marquee-item">Protection</span>
+      <span class="marquee-item">Performance</span>
+      <span class="marquee-item">JMX 2026</span>
+      <span class="marquee-item">Ride Beyond</span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee-item">Race</span>
+      <span class="marquee-item">Protection</span>
+      <span class="marquee-item">Performance</span>
+      <span class="marquee-item">JMX 2026</span>
+      <span class="marquee-item">Ride Beyond</span>
+    </div>
+  </div>
+
+  <!-- COLLECTION -->
+  <section class="collection-section">
+    <div class="collection-header">
+      <div>
+        <div class="section-label" style="color:var(--red);">Featured Products</div>
+        <h2 class="section-title">'26 Collection<br>Highlights</h2>
+      </div>
+      <a href="products.html">View All Products →</a>
+    </div>
+    <div class="product-grid">
+      <a href="#" class="product-card">
+        <div class="product-img-wrap">
+          <img src="src/assets/images/product-suit-red.png" alt="JMX Stealth Suit Red">
+          <div class="product-badge new">New</div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Unisex · Race Suit</div>
+          <div class="product-name">Stealth Pro Race Suit (Red)</div>
+        </div>
+      </a>
+      <a href="#" class="product-card">
+        <div class="product-img-wrap">
+          <img src="src/assets/images/product-suit-pink.png" alt="JMX Blush Suit Pink">
+          <div class="product-badge">Limited</div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Unisex · Performance Suit</div>
+          <div class="product-name">Blush Performance Suit</div>
+        </div>
+      </a>
+      <a href="#" class="product-card">
+        <div class="product-img-wrap">
+          <img src="src/assets/images/product-suit-black-back.jpg" alt="JMX Stealth Suit Black">
+          <div class="product-badge">Aero</div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Unisex · Race Suit</div>
+          <div class="product-name">Stealth Pro Race Suit (Back)</div>
+        </div>
+      </a>
+      <a href="#" class="product-card">
+        <div class="product-img-wrap">
+          <img src="src/assets/images/product-boots-red.png" alt="JMX Pro Race Boots Red">
+          <div class="product-badge new">New</div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Unisex · Footwear</div>
+          <div class="product-name">Pro Race Boots (Red)</div>
+        </div>
+      </a>
+      <a href="#" class="product-card">
+        <div class="product-img-wrap">
+          <img src="src/assets/images/product-cap-black.png" alt="JMX Racing Cap Black">
+          <div class="product-badge">Essentials</div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Unisex · Accessories</div>
+          <div class="product-name">JMX Racing Logo Cap</div>
+        </div>
+      </a>
+      <a href="#" class="product-card">
+        <div class="product-img-wrap">
+          <img src="src/assets/images/product-boots-white.png" alt="JMX Pro Race Boots White">
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Unisex · Footwear</div>
+          <div class="product-name">Pro Race Boots (White)</div>
+        </div>
+      </a>
+      <a href="#" class="product-card">
+        <div class="product-img-wrap">
+          <img src="src/assets/images/product-bag-round.png" alt="JMX Aero Round Bag">
+          <div class="product-badge">New</div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Unisex · Accessories</div>
+          <div class="product-name">Aero Round Travel Bag</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="certifications">
+    <div class="cert-container">
+      <img src="src/assets/images/certifications.png" alt="Certifications & Memberships">
+    </div>
+  </section>
+
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <img src="src/assets/images/jmx-logo.png" alt="JMX Motorsports"
+            style="height:60px;width:auto;filter:url(#invert-black-preserve-red);">
+        </div>
+        <p>Built for riders who push limits. Premium motocross and road apparel engineered for performance and
+          protection.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/jmxmotorsports/" target="_blank" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col" id="support-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="size-chart.html">Size Guides</a></li>
+          <li><a href="mailto:info@jmxmotorsports.com">Contact Us</a></li>
+          <li><a href="aboutus.html">About JMX</a></li>
+        </ul>
+      </div>
+      <div class="footer-col" id="location-col">
+        <h4>Location</h4>
+        <div class="footer-map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3366.64667323437!2d74.51723487544585!3d32.455390973799695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391ec1ebd58976dd%3A0x166d3a0d521159b9!2sJIMCO%20INDUSTRIES!5e0!3m2!1sen!2s!4v1774800803989!5m2!1sen!2s"           
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="footer-address">
+          4-Km, Aimen Abad Road,<br>
+          Near Akbar Abad Chowk,<br>
+          Sialkot, Pakistan. Sialkot, Punjab
+        </div>
+      </div>
+      <div class="footer-col" id="newsletter-col">
+        <p
+          style="color:var(--white); font-family:'Barlow', sans-serif; font-weight:600; font-size:18px; line-height:1.3; margin-top:12px; margin-bottom:20px; max-width:260px;">
+          Newsletter
+        </p>
+        <div class="newsletter-form" style="display:flex;flex-direction:column;gap:10px;max-width:260px;">
+          <input id="nl-email-idx" type="email" placeholder="Enter your email" required
+            style="background:#1a1a1a;border:1px solid #333;color:#fff;padding:13px 16px;font-family:'Barlow',sans-serif;font-size:14px;outline:none;width:100%;box-sizing:border-box;">
+          <button onclick="nlSubscribe('nl-email-idx','nl-msg-idx')"
+            style="background:var(--red);color:#fff;border:none;padding:14px 20px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;width:100%;transition:background 0.2s;"
+            onmouseover="this.style.backgroundColor='#a30000'" onmouseout="this.style.backgroundColor='var(--red)'">
+            SIGN UP
+          </button>
+          <p id="nl-msg-idx" style="font-size:13px;margin:0;min-height:18px;"></p>
+        </div>
+      </div>
+      <script>
+        async function nlSubscribe(inputId, msgId) {
+          const email = document.getElementById(inputId).value.trim();
+          const msg = document.getElementById(msgId);
+          if (!email) { msg.style.color = '#f88'; msg.textContent = 'Please enter an email address.'; return; }
+          msg.style.color = '#aaa'; msg.textContent = 'Subscribing…';
+          try {
+            const res = await fetch('/api/newsletter/subscribe', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email })
+            });
+            const data = await res.json();
+            if (res.ok) {
+              msg.style.color = data.status === 'already_subscribed' ? '#f0b429' : '#6de06d';
+              msg.textContent = data.message;
+              document.getElementById(inputId).value = '';
+            } else {
+              msg.style.color = '#f88';
+              msg.textContent = data.detail || 'Something went wrong.';
+            }
+          } catch (e) {
+            msg.style.color = '#f88'; msg.textContent = 'Could not connect to server.';
+          }
+        }
+      </script>
+    </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 JMX Motorsport. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Cookie Settings</a>
+      </div>
+    </div>
+  </footer>
+  <!-- MOBILE DRAWER -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <span>Menu</span>
+      <button class="drawer-close" id="drawer-close">&times;</button>
+    </div>
+    <div class="drawer-section-title">Categories</div>
+    <ul class="drawer-links">
+      <li><a href="products.html">All Products</a></li>
+      <li><a href="products.html?category=Leather%20Suits">Leather Suits</a></li>
+      <li><a href="products.html?category=Jackets%20%26%20Hoodies">Jackets & Hoodies</a></li>
+      <li><a href="products.html?category=Gloves">Motorcycle Gloves</a></li>
+      <li><a href="products.html?category=Boots">Motorcycle Boots</a></li>
+      <li><a href="products.html?category=Protectors">Protectors</a></li>
+      <li><a href="products.html?category=Headwear">Balaclava's</a></li>
+      <li><a href="products.html?category=Baselayer">Base & Mid-Layers</a></li>
+      <li><a href="products.html?category=Accessories">Accessories</a></li>
+    </ul>
+    <div class="drawer-section-title">Info</div>
+    <ul class="drawer-links">
+      <li><a href="size-chart.html">Size Guides</a></li>
+      <li><a href="aboutus.html">About JMX</a></li>
+      <li><a href="mailto:info@jmxmotorsports.com">Contact Us</a></li>
+    </ul>
+  </div>
+
+
+  <script>
+    // Sticky nav scroll effect
+    const nav = document.getElementById('navbar');
+    const topBar = document.querySelector('.top-bar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 30) {
+        nav.classList.add('scrolled');
+        // optional: hide top bar on scroll
+        // topBar.style.transform = 'translateY(-100%)';
+      } else {
+        nav.classList.remove('scrolled');
+        // topBar.style.transform = 'translateY(0)';
+      }
+    });
+    // Load featured products dynamically from API
+    async function loadFeaturedProducts() {
+      const grid = document.querySelector('.product-grid');
+      try {
+        const res = await fetch('/api/products/?featured=true&limit=8');
+        if (!res.ok) throw new Error('API unavailable');
+        const products = await res.json();
+        if (products.length === 0) return; // Keep static HTML if nothing returned
+        grid.innerHTML = '';
+        products.forEach(p => {
+          // Get image: prefer variants[0].images[0], fallback to images[0]
+          const img = (p.variants && p.variants[0] && p.variants[0].images[0])
+            || (p.images && p.images[0])
+            || '';
+          const card = document.createElement('a');
+          card.href = `products.html?category=${encodeURIComponent(p.category)}`;
+          card.className = 'product-card';
+          card.innerHTML = `
+            <div class="product-img-wrap">
+              <img src="${img}" alt="${p.name}" loading="lazy">
+              <div class="product-badge new">Featured</div>
+            </div>
+            <div class="product-info">
+              <div class="product-cat">${p.category}</div>
+              <div class="product-name">${p.name}</div>
+            </div>
+          `;
+          grid.appendChild(card);
+        });
+      } catch (err) {
+        console.warn('Featured products API failed, keeping static content.', err);
+      }
+    }
+    document.addEventListener('DOMContentLoaded', loadFeaturedProducts);
+    const hamburger = document.querySelector('.hamburger');
+    const drawer = document.getElementById('mobile-drawer');
+    const drawerOverlay = document.getElementById('drawer-overlay');
+    const drawerClose = document.getElementById('drawer-close');
+
+    function openDrawer() {
+      drawer.classList.add('open');
+      drawerOverlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDrawer() {
+      drawer.classList.remove('open');
+      drawerOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', openDrawer);
+    drawerClose.addEventListener('click', closeDrawer);
+    drawerOverlay.addEventListener('click', closeDrawer);
+
+
+  </script>
+
+</body>
+
+</html>
