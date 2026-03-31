@@ -1730,7 +1730,7 @@
           if (!email) { msg.style.color = '#f88'; msg.textContent = 'Please enter an email address.'; return; }
           msg.style.color = '#aaa'; msg.textContent = 'Subscribing…';
           try {
-            const res = await fetch('/api/newsletter/subscribe', {
+            const res = await fetch('https://jmx-motorsport.onrender.com/api/newsletter/subscribe', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({ email })
@@ -1807,7 +1807,7 @@
     async function loadFeaturedProducts() {
       const grid = document.querySelector('.product-grid');
       try {
-        const res = await fetch('/api/products/?featured=true&limit=8');
+        const res = await fetch('https://jmx-motorsport.onrender.com/api/products/?featured=true&limit=8');
         if (!res.ok) throw new Error('API unavailable');
         const products = await res.json();
         if (products.length === 0) return; // Keep static HTML if nothing returned
