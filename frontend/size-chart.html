@@ -1122,7 +1122,7 @@
                     if (!email) { msg.style.color = '#f88'; msg.textContent = 'Please enter an email address.'; return; }
                     msg.style.color = '#aaa'; msg.textContent = 'Subscribing…';
                     try {
-                        const res = await fetch('/api/newsletter/subscribe', {
+                            const res = await fetch('https://jmx-motorsport.onrender.com/api/newsletter/subscribe', {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({ email })
