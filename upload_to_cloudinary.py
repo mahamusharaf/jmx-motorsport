@@ -86,7 +86,7 @@ def update_mongo(url_map):
         if "images" in product:
             new_imgs = []
             for img in product["images"]:
-                mapped = url_map.get(img, img)
+                mapped = url_map.get(img, url_map.get(img.lstrip('/'), img))
                 new_imgs.append(mapped)
                 if mapped != img:
                     changed = True
@@ -98,7 +98,7 @@ def update_mongo(url_map):
                 if "images" in variant:
                     new_imgs = []
                     for img in variant["images"]:
-                        mapped = url_map.get(img, img)
+                        mapped = url_map.get(img, url_map.get(img.lstrip('/'), img))
                         new_imgs.append(mapped)
                         if mapped != img:
                             changed = True

@@ -16,7 +16,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 # Load environment variables
 # load_dotenv()
 
-MONGO_URI = "mongodb://localhost:27017" # os.getenv("MONGO_URI", "mongodb://localhost:27017")
+MONGO_URI = "mongodb+srv://mahamusharaf1326_db_user:motosport_brand2876@cluster0.e4mcd16.mongodb.net/?retryWrites=true&w=majority"
 DATABASE_NAME = "motorsport_db" # os.getenv("DATABASE_NAME", "motorsport_db")
 SEED_FILE = Path(__file__).parent / "app" / "data" / "new_products.json"
 

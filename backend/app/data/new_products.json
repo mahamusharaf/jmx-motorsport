@@ -12,14 +12,14 @@
       {
         "name": "Blackred",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710066/products/bag/blackred-bag-main.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710064/products/bag/blackred-bag-inside.png"
+          "/src/assets/images/products/bag/blackred-bag-main.png",
+          "/src/assets/images/products/bag/blackred-bag-inside.png"
         ]
       },
       {
         "name": "Blackwhite",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710067/products/bag/blackwhite-bag.png"
+          "/src/assets/images/products/bag/blackwhite-bag.png"
         ]
       }
     ],
@@ -40,7 +40,7 @@
       {
         "name": "Black",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641521/products/black-bag.png"
+          "/src/assets/images/products/black-bag.png"
         ]
       }
     ],
@@ -61,7 +61,7 @@
       {
         "name": "Multicolor",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774542753/products/multicolor-caps.png"
+          "/src/assets/images/products/multicolor-caps.png"
         ]
       }
     ],
@@ -82,15 +82,15 @@
       {
         "name": "Black",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710079/products/baselayer/black-baselayer-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710078/products/baselayer/black-baselayer-back.png"
+          "/src/assets/images/products/baselayer/black-baselayer-front.png",
+          "/src/assets/images/products/baselayer/black-baselayer-back.png"
         ]
       },
       {
         "name": "Pink",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710081/products/baselayer/pink-baselayer-front-main.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710080/products/baselayer/pink-baselayer-back-main.png"
+          "/src/assets/images/products/baselayer/pink-baselayer-front-main.png",
+          "/src/assets/images/products/baselayer/pink-baselayer-back-main.png"
         ]
       }
     ],
@@ -111,8 +111,8 @@
       {
         "name": "Blackgrey",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641548/products/blackgrey-baselayer-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641546/products/blackgrey-baselayer-back.png"
+          "/src/assets/images/products/blackgrey-baselayer-front.png",
+          "/src/assets/images/products/blackgrey-baselayer-back.png"
         ]
       }
     ],
@@ -133,8 +133,8 @@
       {
         "name": "Red",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641584/products/red-baselayer-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641582/products/red-baselayer-back.png"
+          "/src/assets/images/products/red-baselayer-front.png",
+          "/src/assets/images/products/red-baselayer-back.png"
         ]
       }
     ],
@@ -155,8 +155,8 @@
       {
         "name": "Redb",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641591/products/redb-baselayer-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641590/products/redb-baselayer-back.png"
+          "/src/assets/images/products/redb-baselayer-front.png",
+          "/src/assets/images/products/redb-baselayer-back.png"
         ]
       }
     ],
@@ -177,8 +177,8 @@
       {
         "name": "Black",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774542737/products/black-shoe-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774542733/products/black-shoe-back.png"
+          "/src/assets/images/products/black-shoe-front.png",
+          "/src/assets/images/products/black-shoe-back.png"
         ]
       }
     ],
@@ -199,8 +199,8 @@
       {
         "name": "Red/Black",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710039/products/redb-shoe-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710036/products/redb-shoe-back.png"
+          "/src/assets/images/products/redb-shoe-front.png",
+          "/src/assets/images/products/redb-shoe-back.png"
         ]
       }
     ],
@@ -209,9 +209,9 @@
     "slug": "xtrax-racing-boots"
   },
   {
-    "name": "JMX Alpine Shoe",
+    "name": "JMX Alpine Boots",
     "category": "Boots",
-    "description": "JMX Alpine Shoe is the professional choice for competitive riding and aggressive track days. Its multi-material construction optimizes abrasion resistance and breathability.",
+    "description": "JMX Alpine Boots is the professional choice for competitive riding and aggressive track days. Its multi-material construction optimizes abrasion resistance and breathability.",
     "features": [
       "Durable Construction",
       "Modern Design",
@@ -221,15 +221,15 @@
       {
         "name": "Red",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641588/products/red-shoe-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641587/products/red-shoe-back.png"
+          "/src/assets/images/products/red-shoe-front.png",
+          "/src/assets/images/products/red-shoe-back.png"
         ]
       },
       {
         "name": "White",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774542807/products/white-shoe-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774542802/products/white-shoe-back.png"
+          "/src/assets/images/products/white-shoe-front.png",
+          "/src/assets/images/products/white-shoe-back.png"
         ]
       }
     ],
@@ -250,8 +250,8 @@
       {
         "name": "Black",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774542724/products/black-gloves-main.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774548682/products/black-gloves-oneside.png"
+          "/src/assets/images/products/black-gloves-main.png",
+          "/src/assets/images/products/black-gloves-oneside.png"
         ]
       }
     ],
@@ -272,8 +272,8 @@
       {
         "name": "Whiteblack",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774548819/products/whiteblack-gloves-main.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774542811/products/whiteblack-gloves-back.png"
+          "/src/assets/images/products/whiteblack-gloves-main.png",
+          "/src/assets/images/products/whiteblack-gloves-back.png"
         ]
       }
     ],
@@ -294,15 +294,15 @@
       {
         "name": "Black",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710069/products/balaclava/black-balaclava-front-main.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710068/products/balaclava/black-balaclava-back-main.png"
+          "/src/assets/images/products/balaclava/black-balaclava-front-main.png",
+          "/src/assets/images/products/balaclava/black-balaclava-back-main.png"
         ]
       },
       {
         "name": "Pink",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710076/products/balaclava/pink-balaclava-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710075/products/balaclava/pink-balaclava-back.png"
+          "/src/assets/images/products/balaclava/pink-balaclava-front.png",
+          "/src/assets/images/products/balaclava/pink-balaclava-back.png"
         ]
       }
     ],
@@ -323,8 +323,8 @@
       {
         "name": "Ghost",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710073/products/balaclava/ghost-balaclava-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710072/products/balaclava/ghost-balaclava-back.png"
+          "/src/assets/images/products/balaclava/ghost-balaclava-front.png",
+          "/src/assets/images/products/balaclava/ghost-balaclava-back.png"
         ]
       }
     ],
@@ -345,8 +345,8 @@
       {
         "name": "Ghost",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774709873/products/basic-balaclava-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774709869/products/basic-balaclava-back.png"
+          "/src/assets/images/products/basic-balaclava-front.png",
+          "/src/assets/images/products/basic-balaclava-back.png"
         ]
       }
     ],
@@ -367,9 +367,9 @@
       {
         "name": "Bling",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774709943/products/bling-hoodie-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774709951/products/bling-hoodie-inside.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774709940/products/bling-hoodie-back.png"
+          "/src/assets/images/products/bling-hoodie-front.png",
+          "/src/assets/images/products/bling-hoodie-inside.png",
+          "/src/assets/images/products/bling-hoodie-back.png"
         ]
       }
     ],
@@ -390,25 +390,25 @@
       {
         "name": "Black",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710093/products/hoodie/black-armoured-hoodie-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710094/products/hoodie/black-armoured-hoodie-inside.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710092/products/hoodie/black-armoured-hoodie-back.png"
+          "/src/assets/images/products/hoodie/black-armoured-hoodie-front.png",
+          "/src/assets/images/products/hoodie/black-armoured-hoodie-inside.png",
+          "/src/assets/images/products/hoodie/black-armoured-hoodie-back.png"
         ]
       },
       {
         "name": "Blue",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710099/products/hoodie/blue-armoured-hoodie-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710100/products/hoodie/blue-armoured-hoodie-inside.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710096/products/hoodie/blue-armoured-hoodie-back.png"
+          "/src/assets/images/products/hoodie/blue-armoured-hoodie-front.png",
+          "/src/assets/images/products/hoodie/blue-armoured-hoodie-inside.png",
+          "/src/assets/images/products/hoodie/blue-armoured-hoodie-back.png"
         ]
       },
       {
         "name": "Pink",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710103/products/hoodie/pink-armoured-hoodie-front-main.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710105/products/hoodie/pink-armoured-hoodie-inside-main.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710102/products/hoodie/pink-armoured-hoodie-back-main.png"
+          "/src/assets/images/products/hoodie/pink-armoured-hoodie-front-main.png",
+          "/src/assets/images/products/hoodie/pink-armoured-hoodie-inside-main.png",
+          "/src/assets/images/products/hoodie/pink-armoured-hoodie-back-main.png"
         ]
       }
     ],
@@ -429,43 +429,14 @@
       {
         "name": "Redblack",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641594/products/redblack-armored-jacket-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641592/products/redblack-armored-jacket-back.png"
+          "/src/assets/images/products/redblack-armored-jacket-front.png",
+          "/src/assets/images/products/redblack-armored-jacket-back.png"
         ]
       }
     ],
     "sku": "JMX-JH-003",
     "is_featured": true,
     "slug": "jmx-body-armor"
-  },
-  {
-    "name": "Sakura Edition ",
-    "category": "Leather Suits",
-    "description": "Command the track with elegance. The Sakura Edition Leather Suit merges aggressive racing tech with a stunning, distinctive floral design. Crafted from our premium, competition-grade leather chassis, this suit utilizes intricate perforated panels for dynamic airflow control during active riding. Anatomically contoured multi-direction stretch panels eliminate binding in the tuck, while the unique pink-to-cream-to-black floral print provides undeniable, chic visibility on the starting grid. This isn't just a suit; it's a statement of speed and style. Verified JMX race-grade safety is seamlessly integrated into every stitch.",
-    "features": [
-      "Durable Construction",
-      "Modern Design",
-      "Verified Safety"
-    ],
-    "variants": [
-      {
-        "name": "Black Flower",
-        "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641531/products/black-flower-leather-suit-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774709889/products/black-flower-leather-suit-back.png"
-        ]
-      },
-      {
-        "name": "White Flower",
-        "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641603/products/white-flower-leather-suit-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641602/products/white-flower-leather-suit-back.png"
-        ]
-      }
-    ],
-    "sku": "JMX-LS-001",
-    "is_featured": false,
-    "slug": "sakura-edition-"
   },
   {
     "name": "Black Leather Suit",
@@ -480,36 +451,14 @@
       {
         "name": "Black",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774709909/products/black-leather-suit-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641539/products/black-leather-suit-back.png"
+          "/src/assets/images/products/black-leather-suit-front.png",
+          "/src/assets/images/products/black-leather-suit-back.png"
         ]
       }
     ],
     "sku": "JMX-LS-002",
     "is_featured": false,
     "slug": "black-leather-suit"
-  },
-  {
-    "name": "Elixir Leather Suit",
-    "category": "Leather Suits",
-    "description": "Dynamic aesthetics. Dynamic performance. Elixir BlackPink Leather Suit is engineered for high-visibility action and uncompromised comfort. This premium, multi-density technical chassis utilizes vibrant pink kinetic panels against a deep black leather void for a sophisticated, high-energy look on track and street. Anatomically contoured high-flex stretch panels allow rapid movement patterns in the tuck, eliminating standard pressure points and reducing fatigue.",
-    "features": [
-      "Durable Construction",
-      "Modern Design",
-      "Verified Safety"
-    ],
-    "variants": [
-      {
-        "name": "Black",
-        "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641551/products/blackpink-leather-suit-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641549/products/blackpink-leather-suit-back.png"
-        ]
-      }
-    ],
-    "sku": "JMX-LS-003",
-    "is_featured": false,
-    "slug": "elixir-leather-suit"
   },
   {
     "name": "Sleath Leather Suit",
@@ -524,8 +473,8 @@
       {
         "name": "Blackwhite",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641556/products/blackwhite-leather-suit-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641554/products/blackwhite-leather-suit-back.png"
+          "/src/assets/images/products/blackwhite-leather-suit-front.png",
+          "/src/assets/images/products/blackwhite-leather-suit-back.png"
         ]
       }
     ],
@@ -546,43 +495,43 @@
       {
         "name": "Blue",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710083/products/colored-leather-suits/blue-leather-suit-front-main.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710082/products/colored-leather-suits/blue-leather-suit-back-main.png"
+          "/src/assets/images/products/colored-leather-suits/blue-leather-suit-front-main.png",
+          "/src/assets/images/products/colored-leather-suits/blue-leather-suit-back-main.png"
         ]
       },
       {
         "name": "Neonpink",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710085/products/colored-leather-suits/neonpink-leather-suit-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710084/products/colored-leather-suits/neonpink-leather-suit-back.png"
+          "/src/assets/images/products/colored-leather-suits/neonpink-leather-suit-front.png",
+          "/src/assets/images/products/colored-leather-suits/neonpink-leather-suit-back.png"
         ]
       },
       {
         "name": "Purple",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710087/products/colored-leather-suits/purple-leather-suit-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710086/products/colored-leather-suits/purple-leather-suit-back.png"
+          "/src/assets/images/products/colored-leather-suits/purple-leather-suit-front.png",
+          "/src/assets/images/products/colored-leather-suits/purple-leather-suit-back.png"
         ]
       },
       {
         "name": "Silver",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710089/products/colored-leather-suits/silver-leather-suit-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710088/products/colored-leather-suits/silver-leather-suit-back.png"
+          "/src/assets/images/products/colored-leather-suits/silver-leather-suit-front.png",
+          "/src/assets/images/products/colored-leather-suits/silver-leather-suit-back.png"
         ]
       },
       {
         "name": "White",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710091/products/colored-leather-suits/white-leather-suit-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710090/products/colored-leather-suits/white-leather-suit-back.png"
+          "/src/assets/images/products/colored-leather-suits/white-leather-suit-front.png",
+          "/src/assets/images/products/colored-leather-suits/white-leather-suit-back.png"
         ]
       },
       {
         "name": "Cherryblossam",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641564/products/cherryblossam-leather-suit-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641562/products/cherryblossam-leather-suit-back.png"
+          "/src/assets/images/products/cherryblossam-leather-suit-front.png",
+          "/src/assets/images/products/cherryblossam-leather-suit-back.png"
         ]
       }
     ],
@@ -603,8 +552,8 @@
       {
         "name": "Multicolor",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641578/products/multicolor-leather-suit-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641576/products/multicolor-leather-suit-back.png"
+          "/src/assets/images/products/multicolor-leather-suit-front.png",
+          "/src/assets/images/products/multicolor-leather-suit-back.png"
         ]
       }
     ],
@@ -625,8 +574,8 @@
       {
         "name": "Paint",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641580/products/paint-leather-suit-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641579/products/paint-leather-suit-back.png"
+          "/src/assets/images/products/paint-leather-suit-front.png",
+          "/src/assets/images/products/paint-leather-suit-back.png"
         ]
       }
     ],
@@ -647,14 +596,65 @@
       {
         "name": "Redblack",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774710044/products/redblack-leather-suit-front.png",
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641595/products/redblack-leather-suit-back.png"
+          "/src/assets/images/products/redblack-leather-suit-front.png",
+          "/src/assets/images/products/redblack-leather-suit-back.png"
         ]
       }
     ],
     "sku": "JMX-LS-009",
     "is_featured": true,
     "slug": "xtrax-leather-suit"
+  },
+   {
+    "name": "Sakura Edition ",
+    "category": "Leather Suits",
+    "description": "Command the track with elegance. The Sakura Edition Leather Suit merges aggressive racing tech with a stunning, distinctive floral design. Crafted from our premium, competition-grade leather chassis, this suit utilizes intricate perforated panels for dynamic airflow control during active riding. Anatomically contoured multi-direction stretch panels eliminate binding in the tuck, while the unique pink-to-cream-to-black floral print provides undeniable, chic visibility on the starting grid. This isn't just a suit; it's a statement of speed and style. Verified JMX race-grade safety is seamlessly integrated into every stitch.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Black Flower",
+        "images": [
+          "/src/assets/images/products/black-flower-leather-suit-front.png",
+          "/src/assets/images/products/black-flower-leather-suit-back.png"
+        ]
+      },
+      {
+        "name": "White Flower",
+        "images": [
+          "/src/assets/images/products/white-flower-leather-suit-front.png",
+          "/src/assets/images/products/white-flower-leather-suit-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-LS-001",
+    "is_featured": false,
+    "slug": "sakura-edition-"
+  },
+  {
+    "name": "Elixir Leather Suit",
+    "category": "Leather Suits",
+    "description": "Dynamic aesthetics. Dynamic performance. Elixir BlackPink Leather Suit is engineered for high-visibility action and uncompromised comfort. This premium, multi-density technical chassis utilizes vibrant pink kinetic panels against a deep black leather void for a sophisticated, high-energy look on track and street. Anatomically contoured high-flex stretch panels allow rapid movement patterns in the tuck, eliminating standard pressure points and reducing fatigue.",
+    "features": [
+      "Durable Construction",
+      "Modern Design",
+      "Verified Safety"
+    ],
+    "variants": [
+      {
+        "name": "Black",
+        "images": [
+          "/src/assets/images/products/blackpink-leather-suit-front.png",
+          "/src/assets/images/products/blackpink-leather-suit-back.png"
+        ]
+      }
+    ],
+    "sku": "JMX-LS-003",
+    "is_featured": false,
+    "slug": "elixir-leather-suit"
   },
   {
     "name": "Ce Protectors' Level 2",
@@ -669,7 +669,7 @@
       {
         "name": "Standard",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641561/products/CE%20Protectors%27%20Level-2.png"
+          "/src/assets/images/products/CE Protectors' Level-2.png"
         ]
       }
     ],
@@ -690,7 +690,7 @@
       {
         "name": "Standard",
         "images": [
-          "https://res.cloudinary.com/dmp05w5mi/image/upload/v1774641573/products/KNOX%20CE%20Protectors%20Level-1.png"
+          "/src/assets/images/products/KNOX CE Protectors Level-1.png"
         ]
       }
     ],

@@ -1,18 +1,3 @@
-"""
-migrate_to_atlas.py
--------------------
-Migrates ALL collections from your local MongoDB (Compass) to MongoDB Atlas.
-
-Usage:
-    1. Make sure your local MongoDB is running (Compass can do this).
-    2. Set ATLAS_URL below to your Atlas connection string, OR set it in .env
-       as ATLAS_MONGODB_URL.
-    3. Run:
-           .venv\Scripts\python.exe migrate_to_atlas.py
-
-Collections migrated: products, subscribers (all collections in motorsport_db)
-"""
-
 import asyncio
 import os
 from dotenv import load_dotenv
